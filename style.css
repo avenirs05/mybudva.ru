@@ -1,0 +1,551 @@
+html {
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	padding-top: 81px;
+}
+
+ul, span {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-left: 15px;
+}
+
+a {
+	text-decoration: none;	
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.red {
+	color: #8B3330;
+}
+
+.through {
+	text-decoration: line-through;
+}
+
+.real-red {
+	color: red;
+}
+
+.border {
+	border: 1px solid red;
+}
+
+.container
+.container-fluid {
+	padding-right: 70px; 
+	padding-left: 70px;
+}
+
+.hot-offers h2 {
+	color: #ED1C24;
+}
+
+.hot-offers h3 {
+	font-family: 'OpenSansCondensedLight', sans-serif;
+	font-size: 36px;
+}
+
+.hot-offers hr {
+	margin-top: 0;
+}
+
+.item-strip {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.item-strip h3 {
+	margin-top: -8px;
+}
+
+.item-strip button {
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 3px;
+	background-color: rgb(51, 153, 51);
+	color: rgb(255, 255, 255);
+	border: medium none;
+	width: 100%;
+	letter-spacing: 1px;
+	margin-top: 15px;
+}
+
+.item-strip button:hover {
+	background-color: #ED1C24;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.line-through-parent {
+	color: red;
+}
+
+.line-through-child {
+	color: #000;
+}
+
+.price-and-btn {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+}
+
+.price-and-btn span {
+	font-size: 30px;
+}
+
+.whatsapp-icon,
+.viber-icon {
+	margin-bottom: 10px;
+}
+
+.feedback-item-wrap {
+	padding: 0px 200px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.feedback-item-wrap h2{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.header {
+	display: flex;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+.logo-wrapper {
+	background-image: url("imgs/logo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 77px;
+	height: 41px;
+	margin-right: auto;
+}
+
+.burger-menu {
+	background-image: url("imgs/burger-menu.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 42px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.menu-wrapper a {	
+	font-family: 'OpenSansCondensedLight', sans-serif;
+	margin-left: auto;
+	font-size: 28px;
+	color: #fff;
+	margin-right: 20px;
+}
+
+.menu-wrapper a:hover {
+	color: #FFFF33;
+}
+
+.menu-wrapper a:last-child {
+	margin-right: 0;
+}
+
+.phones-wrapper {
+	margin-left: auto;	
+}
+
+.header .glyphicon-earphone {
+	font-size: 18px;
+}
+
+.header .phone-digits {
+	font-size: 28px;
+	font-family: 'OpenSansCondensedLight', sans-serif;
+} 
+
+#carousel-main-screen h1 {
+	position: absolute;
+	width: 100%;
+	background-color: #fff;
+	opacity: .8;
+	z-index: 1000;
+	top: 0px;
+	margin-top: 0;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	padding-bottom: 7px;
+}
+
+.menu-wrapper a.change-color {
+	color: #B8BABD;
+}
+
+.footer {
+	background-color: #333333;
+	padding-top: 10px;
+}
+
+.footer a, 
+.footer div {
+	color: rgb(122, 122, 122);
+	font-size: 14px;
+}
+
+.footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.copyright {
+	color: rgb(122, 122, 122);
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.footer .contacts-wrapper {
+	background-color: #fff;
+	font-size: 18px;
+	font-family: 'OpenSansCondensedLight', sans-serif;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 1px solid #8B3B3F;
+	border-radius: 3px;
+	margin-top: 20px;
+} 
+
+.thank-you {
+	font-family: 'OpenSansCondensedLight', sans-serif;
+	font-size: 24px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.item-menu {
+	background-color: #333333;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'OpenSansCondensedLight', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	padding: 10px 0;
+}
+
+#modal-menu .modal-body {
+	margin-top: 0px;
+}
+
+#modal-menu a {
+	display: block;
+}
+
+#modal-menu a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#modal-menu a:active {
+	background-color: #8B3330;
+	text-decoration: none;
+}
+
+
+/*Начало. Переопределенные стили Bootstrap.*/
+.navbar-default {
+	background-color: #333333;
+	border: none;
+}
+
+#carousel-main-screen .carousel-inner > .item > img {
+	height: 87vh;
+	width: 100%;
+}
+
+#carousel-main-screen {
+	position: relative;
+	height: 87vh;
+}
+
+/*Модальное окно Bootstrap*/
+.modal-title {
+	color: #000000;
+	padding-right: 15px;
+}
+.modal-backdrop.in {
+	opacity: .8;
+}
+.modal-dialog {
+	width: 320px;
+}
+.modal-content {
+	background-color: #F1F1F1;
+}
+.modal-body {
+	padding-top: 0;
+	margin-top: -20px;
+}
+.modal-body input[type="text"] {
+	width: 100%;
+	height: 35px;
+	font-size: 18px;
+}
+.modal-body form > div:nth-child(2) {
+	margin-top: 20px;
+}
+.modal-body > form > div > div {
+	color: #028090;
+	font-weight: bold;
+	font-size: 18px;
+}
+.modal-body input[type="submit"] {
+	background-color: #E7382B;
+	color: #ffffff;
+	width: 100%;
+	height: 60px;
+	border: medium none;
+	border-radius: 2px;
+	font-size: 24px;
+	margin-bottom: 5px;
+	margin-top: 24px;
+	letter-spacing: 1px;
+}
+.modal-body input[type="submit"]:hover {
+	background-color: #339933;
+}
+.modal-body button:hover {
+	background-color: #B03A32;
+}
+.modal-header {
+	border-bottom: none;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+
+/*LightGallery*/
+#lightgallery img {
+	margin-bottom: 5px;
+}
+/*LightGallery*/
+
+@media screen and (min-device-width: 320px) {
+	body {
+		padding-top: 51px;
+	}
+	.container, 
+	.container-fluid {
+		padding-right: 15px; 
+		padding-left: 15px;
+	}
+	.header {
+		margin-top: 12px;
+	}
+	.header .glyphicon-earphone {
+		font-size: 13px;
+		margin-right: -5px;
+	}
+	.header .phone-digits {
+		font-size: 18px;
+	}
+	.logo-wrapper {
+		width: 56px;
+		height: 30px;
+		display: block;
+	}
+	#carousel-main-screen h1 {
+		font-weight: 700;
+		font-family: 'OpenSansCondensedLight', sans-serif;
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 5px;
+	}
+	#carousel-main-screen .carousel-inner > .item > img {
+		height: 45vh;
+	}
+	#carousel-main-screen {
+		height: 45vh;
+	}
+	#modal-free-consult .modal-dialog,
+	#modal-menu .modal-dialog {
+		width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-device-width: 768px) {
+	.header .phone-digits {
+		font-size: 24px;
+	}
+	#carousel-gallery-mob .carousel-inner > .item {
+		height: 512px;
+	}
+	#carousel-main-screen h1 {
+		font-size: 36px;
+		font-family: 'OpenSansCondensedLight', sans-serif;
+		padding-top: 7px;
+		font-weight: 700;
+	}
+}
+
+@media screen and (min-device-width: 992px) {	
+	.navbar {
+		min-height: 40px;
+	}
+	#carousel-main-screen .carousel-inner > .item > img {
+		height: 600px;
+	}
+	#carousel-main-screen {
+		height: 600px;
+		margin-top: 10px;
+	}
+	body {
+		padding-top: 51px;
+	}
+	.container, 
+	.container-fluid {
+		padding-right: 70px; 
+		padding-left: 70px;
+	}
+	.header .glyphicon-earphone {
+		font-size: 20px;
+		color: #FFFF33;
+	}
+	.header .phone-digits {
+		font-size: 24px;
+	}
+	.digits {
+		color: #FFFF33;
+	}
+	.menu-wrapper a {
+		font-size: 20px;
+		margin-right: 10px;
+	}
+	.logo-wrapper {
+		width: 77px;
+		height: 41px;
+	}
+}
+
+@media screen and (min-device-width: 1366px) {
+	body {
+		padding-top: 61px;
+	}
+	.navbar {
+		min-height: 50px;
+	}
+	#carousel-main-screen .carousel-inner > .item > img {
+		height: 87vh;
+	}
+	#carousel-main-screen {
+		height: 87vh;
+		margin-top: 0;
+	}
+	#carousel-main-screen h1 {
+		font-family: 'OpenSansCondensedLight', sans-serif;
+		font-weight: 700;
+		padding-top: 0px;
+	}
+	.header {
+		margin-top: 10px;
+	}
+	.header .glyphicon-earphone {
+		font-size: 20px;
+	}
+	.header .phone-digits {
+		font-size: 28px;
+	}
+	.menu-wrapper a {
+		font-size: 24px;
+		margin-right: 15px;
+	}
+}
+
+@media screen and (min-device-width: 1600px) {
+	.header .glyphicon-earphone {
+		font-size: 18px;
+	}
+	.header .phone-digits {
+		font-size: 28px;
+	}
+	.menu-wrapper a {
+		font-size: 28px;
+		margin-right: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
