@@ -53,8 +53,8 @@
             <img src="imgs/narcissus_01-min540x360.jpg" alt="" class="img-responsive">
         </div>
         <div class="col-md-8">
-            <h3><a href="#" target="_blank">Апартаменты Rafailovici 1</a></h3>
-            <h4>Апартаменты на первой линии от моря</h4>
+            <h3><a href="#" target="_blank">Вилла Rafailovici 1</a></h3>
+            <h4>Вилла на первой линии от моря</h4>
             <ul>
                 <li><span class="bold">Площадь:</span> 61 кв.м</li>
                 <li><span class="bold">Расстояние до моря:</span> 20 м</li>
@@ -68,7 +68,7 @@
                 <span>€ 300</span>
             </div>
             <a class="text-right" href="#">
-                <button>Подробнее</button>
+                <a href="/villas.php" target="_blank"><button>Подробнее</button></a>
             </a>
         </div>
     </div> 
