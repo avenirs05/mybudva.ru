@@ -53,8 +53,8 @@ a {
 }
 
 .hot-offers h3 {
-	font-family: 'OpenSansCondensedLight', sans-serif;
-	font-size: 36px;
+/*	font-family: 'OpenSansCondensedLight', sans-serif;*/
+/*	font-size: 36px;*/
 }
 
 .hot-offers hr {
@@ -67,7 +67,7 @@ a {
 }
 
 .item-strip h3 {
-	margin-top: -8px;
+	margin-top: -5px;
 }
 
 .item-strip button {
