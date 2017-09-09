@@ -9,7 +9,7 @@
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
-                    <li class="active">Управление объектами недвижимости</li>
+<!--                    <li class="active">Управление объектами недвижимости</li>-->
                 </ol>
             </div>
 

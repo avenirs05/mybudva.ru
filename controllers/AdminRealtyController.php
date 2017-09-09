@@ -33,22 +33,30 @@ class AdminRealtyController extends AdminBase
         // Проверка доступа
         self::checkAdmin();
 
-        // Получаем список категорий для выпадающего списка
-        // $categoriesList = Category::getCategoriesListAdmin();
-
         // Обработка формы
         if (isset($_POST['submit'])) {
             // Если форма отправлена
             // Получаем данные из формы
+            $options['type'] = $_POST['type'];
             $options['name'] = $_POST['name'];
-            $options['code'] = $_POST['code'];
+            $options['mini_descr'] = $_POST['mini_descr'];
+            $options['area'] = $_POST['area'];
+            $options['dist_sea'] = $_POST['dist_sea'];
+            $options['price_through'] = $_POST['price_through'];
             $options['price'] = $_POST['price'];
-            $options['category_id'] = $_POST['category_id'];
-            $options['brand'] = $_POST['brand'];
-            $options['availability'] = $_POST['availability'];
-            $options['description'] = $_POST['description'];
-            $options['is_new'] = $_POST['is_new'];
-            $options['is_recommended'] = $_POST['is_recommended'];
+            $options['action'] = $_POST['action'];
+            $options['discount'] = $_POST['discount'];
+            $options['booking'] = $_POST['booking'];
+            $options['description'] = $_POST['description'];         
+            $options['bedrooms'] = $_POST['bedrooms'];
+            $options['capacity'] = $_POST['capacity'];            
+            $options['dist_tivat'] = $_POST['dist_tivat'];
+            $options['dist_podg'] = $_POST['dist_podg'];               
+            $options['transfer'] = $_POST['transfer'];
+            $options['internet'] = $_POST['internet'];
+            $options['parking'] = $_POST['parking'];
+            $options['child_bed'] = $_POST['child_bed'];
+            $options['cleaning'] = $_POST['cleaning'];
             $options['status'] = $_POST['status'];
 
             // Флаг ошибок в форме
@@ -61,7 +69,7 @@ class AdminRealtyController extends AdminBase
 
             if ($errors == false) {
                 // Если ошибок нет
-                // Добавляем новый товар
+                // Добавляем новый объект
                 $id = Realty::createRealty($options);
 
                 // Если запись добавлена
@@ -69,21 +77,17 @@ class AdminRealtyController extends AdminBase
                     // Проверим, загружалось ли через форму изображение
                     if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
                         // Если загружалось, переместим его в нужную папке, дадим новое имя
-                        move_uploaded_file($_FILES["image"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/Realtys/{$id}.jpg");
+                        move_uploaded_file($_FILES["image"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/realties/{$id}.jpg");
                     }
                 };
 
                 // Перенаправляем пользователя на страницу управлениями товарами
-                header("Location: /admin/Realty");
+                header("Location: /admin/realty");
             }
         }
 
-
-
-
-
         // Подключаем вид
-        require_once(ROOT . '/views/admin_Realty/create.php');
+        require_once(ROOT . '/views/admin_realty/create.php');
         return true;
     }
 
