@@ -296,17 +296,6 @@ class Realty
         $db = Db::getConnection();
 
         // Текст запроса к БД
-//        $sql = 'INSERT INTO realty '
-//                . '(type, name, mini_descr, area, dist_sea, price_through, price, '
-//                . 'action, discount, booking, description, bedrooms, capacity, '
-//                . 'dist_tivat, dist_podg, transfer, internet, parking, child_bed, '
-//                . 'cleaning, status) '
-//                . 'VALUES '
-//                . '(:type, :name, :mini_descr, :area, :dist_sea, :price_through, '
-//                . ':price, :action, :discount, :booking, :description, :bedrooms, '
-//                . ':capacity, :dist_tivat, :dist_podg, :transfer, :internet, :parking, '
-//                . ':child_bed, :cleaning, :status)';
-
             $sql = 'INSERT INTO realty '
                 . '(type, name, mini_descr, area, dist_sea, price_through, price, '
                 . 'action, discount, booking, description, bedrooms, capacity, '

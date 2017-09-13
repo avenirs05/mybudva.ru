@@ -34,16 +34,18 @@ return array(
     'admin/order/update/([0-9]+)' => 'adminOrder/update/$1',
     'admin/order/delete/([0-9]+)' => 'adminOrder/delete/$1',
     'admin/order/view/([0-9]+)' => 'adminOrder/view/$1',
-    'admin/order' => 'adminOrder/index',
-
-
+    'admin/order' => 'adminOrder/index',    
     // О магазине
     'contacts' => 'site/contact',
-    'about' => 'site/about',
-    
+    'about' => 'site/about',    
 
+    
+    
     // Добавление объекта
     'admin/realty/create' => 'adminRealty/create',
+    
+    // Изменение объекта
+    'admin/realty/update/([0-9]+)' => 'adminRealty/update/$1',    
 
     // Управление объектами недвижимости
     'admin/realty' => 'adminRealty/index',

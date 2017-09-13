@@ -2,7 +2,7 @@
 
 /**
  * Контроллер AdminRealtyController
- * Управление товарами в админпанели
+ * Управление объектами в админпанели
  */
 class AdminRealtyController extends AdminBase
 {
@@ -12,13 +12,11 @@ class AdminRealtyController extends AdminBase
      */
     public function actionIndex()
     {
-
         // Проверка доступа
         self::checkAdmin();
 
-        // Получаем список товаров
+        // Получаем список объектов
         $realtiesList = Realty::getRealtiesList();
-
 
         // Подключаем вид
         require_once(ROOT . '/views/admin_realty/index.php');
@@ -26,7 +24,7 @@ class AdminRealtyController extends AdminBase
     }
 
     /**
-     * Action для страницы "Добавить товар"
+     * Action для страницы "Добавить объект"
      */
     public function actionCreate()
     {
@@ -66,6 +64,12 @@ class AdminRealtyController extends AdminBase
             if (!isset($options['name']) || empty($options['name'])) {
                 $errors[] = 'Заполните поля';
             }
+            
+//            d($_FILES);
+//            d($_POST);
+//            d($_SERVER['DOCUMENT_ROOT']);
+            
+            $tmpName = null;
 
             if ($errors == false) {
                 // Если ошибок нет
@@ -75,9 +79,17 @@ class AdminRealtyController extends AdminBase
                 // Если запись добавлена
                 if ($id) {
                     // Проверим, загружалось ли через форму изображение
-                    if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
-                        // Если загружалось, переместим его в нужную папке, дадим новое имя
-                        move_uploaded_file($_FILES["image"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/realties/{$id}.jpg");
+                        if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
+                            $tmpName = $_FILES['image']['tmp_name'];
+                            $originName = $_FILES['image']['name'];
+                            // Создаем папку, где имя папки - это имя объекта
+                            mkdir($_SERVER['DOCUMENT_ROOT'] . "/upload/images/" . $options['name']);
+                            // Если загружалось, переместим его в нужную папке, дадим новое имя
+                            move_uploaded_file($tmpName, $_SERVER['DOCUMENT_ROOT']
+                                    . '/upload/images/'
+                                    . $options['name']
+                                    . '/'
+                                    . $originName);
                     }
                 };
 
@@ -92,33 +104,22 @@ class AdminRealtyController extends AdminBase
     }
 
     /**
-     * Action для страницы "Редактировать товар"
+     * Action для страницы "Редактировать объект"
      */
     public function actionUpdate($id)
     {
         // Проверка доступа
         self::checkAdmin();
 
-        // Получаем список категорий для выпадающего списка
-        $categoriesList = Category::getCategoriesListAdmin();
-
         // Получаем данные о конкретном заказе
-        $Realty = Realty::getRealtyById($id);
+        $realty = Realty::getRealtyById($id);
 
         // Обработка формы
         if (isset($_POST['submit'])) {
             // Если форма отправлена
             // Получаем данные из формы редактирования. При необходимости можно валидировать значения
             $options['name'] = $_POST['name'];
-            $options['code'] = $_POST['code'];
             $options['price'] = $_POST['price'];
-            $options['category_id'] = $_POST['category_id'];
-            $options['brand'] = $_POST['brand'];
-            $options['availability'] = $_POST['availability'];
-            $options['description'] = $_POST['description'];
-            $options['is_new'] = $_POST['is_new'];
-            $options['is_recommended'] = $_POST['is_recommended'];
-            $options['status'] = $_POST['status'];
 
             // Сохраняем изменения
             if (Realty::updateRealtyById($id, $options)) {
@@ -134,11 +135,11 @@ class AdminRealtyController extends AdminBase
             }
 
             // Перенаправляем пользователя на страницу управлениями товарами
-            header("Location: /admin/Realty");
+            header("Location: /admin/realty");
         }
 
         // Подключаем вид
-        require_once(ROOT . '/views/admin_Realty/update.php');
+        require_once(ROOT . '/views/admin_realty/update.php');
         return true;
     }
 
