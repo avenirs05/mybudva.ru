@@ -5,6 +5,124 @@
  */
 class Realty
 {
+     /**
+     * Добавляет новый объект
+     * @param array $options <p>Массив с информацией об объекте</p>
+     * @return integer <p>id добавленной в таблицу записи</p>
+     */
+    public static function createRealty($options) {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'INSERT INTO realty '
+                . '(type, name, mini_descr, area, dist_sea, price_through, price, '
+                . 'action, discount, booking, description, bedrooms, capacity, '
+                . 'dist_tivat, dist_podg, transfer, internet, parking, child_bed, '
+                . 'cleaning, status) '
+                . 'VALUES '
+                . '(:type, :name, :mini_descr, :area, :dist_sea, :price_through, :price, '
+                . ':action, :discount, :booking, :description, :bedrooms, :capacity, '
+                . ':dist_tivat, :dist_podg, :transfer, :internet, '
+                . ':parking, :child_bed, :cleaning, :status)';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':type', $options['type'], PDO::PARAM_STR);
+        $result->bindParam(':name', $options['name'], PDO::PARAM_STR);
+        $result->bindParam(':mini_descr', $options['mini_descr'], PDO::PARAM_STR);
+        $result->bindParam(':area', $options['area'], PDO::PARAM_STR);
+        $result->bindParam(':dist_sea', $options['dist_sea'], PDO::PARAM_STR);
+        $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_INT);
+        $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
+        $result->bindParam(':action', $options['action'], PDO::PARAM_STR);
+        $result->bindParam(':discount', $options['discount'], PDO::PARAM_INT);
+        $result->bindParam(':booking', $options['booking'], PDO::PARAM_INT);
+        $result->bindParam(':description', $options['description'], PDO::PARAM_STR);
+        $result->bindParam(':bedrooms', $options['bedrooms'], PDO::PARAM_STR);
+        $result->bindParam(':capacity', $options['capacity'], PDO::PARAM_STR);
+        $result->bindParam(':dist_tivat', $options['dist_tivat'], PDO::PARAM_STR);
+        $result->bindParam(':dist_podg', $options['dist_podg'], PDO::PARAM_STR);
+        $result->bindParam(':transfer', $options['transfer'], PDO::PARAM_STR);
+        $result->bindParam(':internet', $options['internet'], PDO::PARAM_STR);
+        $result->bindParam(':parking', $options['parking'], PDO::PARAM_STR);
+        $result->bindParam(':child_bed', $options['child_bed'], PDO::PARAM_STR);
+        $result->bindParam(':cleaning', $options['cleaning'], PDO::PARAM_STR);
+        $result->bindParam(':status', $options['status'], PDO::PARAM_STR);
+
+        if ($result->execute()) {
+            // Если запрос выполенен успешно, возвращаем id добавленной записи
+            return $db->lastInsertId();
+        }
+        // Иначе возвращаем 0
+        return 0;
+    }
+
+    /**
+     * Редактирует объект с заданным id
+     * @param integer $id <p>id объекта</p>
+     * @param array $options <p>Массив с информацей об объекте</p>
+     * @return boolean <p>Результат выполнения метода</p>
+     */
+    
+    public static function updateRealtyById($id, $options) {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = "UPDATE Realty
+            SET 
+                name = :name, 
+                code = :code, 
+                price = :price, 
+                category_id = :category_id, 
+                brand = :brand, 
+                availability = :availability, 
+                description = :description, 
+                is_new = :is_new, 
+                is_recommended = :is_recommended, 
+                status = :status
+            WHERE id = :id";
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        $result->bindParam(':name', $options['name'], PDO::PARAM_STR);
+        $result->bindParam(':code', $options['code'], PDO::PARAM_STR);
+        $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
+        $result->bindParam(':category_id', $options['category_id'], PDO::PARAM_INT);
+        $result->bindParam(':brand', $options['brand'], PDO::PARAM_STR);
+        $result->bindParam(':availability', $options['availability'], PDO::PARAM_INT);
+        $result->bindParam(':description', $options['description'], PDO::PARAM_STR);
+        $result->bindParam(':is_new', $options['is_new'], PDO::PARAM_INT);
+        $result->bindParam(':is_recommended', $options['is_recommended'], PDO::PARAM_INT);
+        $result->bindParam(':status', $options['status'], PDO::PARAM_INT);
+        return $result->execute();
+    }
+    
+    /**
+    * Добавляет новый объект
+    * @param array $options <p>Массив с информацией об объекте</p>
+    * @return integer <p>id добавленной в таблицу записи</p>
+    */
+    public static function getImgNameList($options)
+    {
+        $imgNameList = [];
+        if (isset($_FILES)) {
+            if ($handle = opendir(ROOT . "/upload/images/" . $options['name'])) {
+                while (($imgName = readdir($handle)) !== false) {
+                    if ( ($imgName !== '.') && ($imgName !== '..') ) {
+                        $imgNameList[] = $imgName;
+                    }                    
+                }
+                
+                closedir($handle);
+            }
+        }
+        return $imgNameList;
+    }        
+
+
 
     // Количество отображаемых объектов по умолчанию
     const SHOW_BY_DEFAULT = 6;
@@ -241,102 +359,6 @@ class Realty
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
         return $result->execute();
-    }
-
-    /**
-     * Редактирует товар с заданным id
-     * @param integer $id <p>id товара</p>
-     * @param array $options <p>Массив с информацей о товаре</p>
-     * @return boolean <p>Результат выполнения метода</p>
-     */
-    public static function updateRealtyById($id, $options)
-    {
-        // Соединение с БД
-        $db = Db::getConnection();
-
-        // Текст запроса к БД
-        $sql = "UPDATE Realty
-            SET 
-                name = :name, 
-                code = :code, 
-                price = :price, 
-                category_id = :category_id, 
-                brand = :brand, 
-                availability = :availability, 
-                description = :description, 
-                is_new = :is_new, 
-                is_recommended = :is_recommended, 
-                status = :status
-            WHERE id = :id";
-
-        // Получение и возврат результатов. Используется подготовленный запрос
-        $result = $db->prepare($sql);
-        $result->bindParam(':id', $id, PDO::PARAM_INT);
-        $result->bindParam(':name', $options['name'], PDO::PARAM_STR);
-        $result->bindParam(':code', $options['code'], PDO::PARAM_STR);
-        $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
-        $result->bindParam(':category_id', $options['category_id'], PDO::PARAM_INT);
-        $result->bindParam(':brand', $options['brand'], PDO::PARAM_STR);
-        $result->bindParam(':availability', $options['availability'], PDO::PARAM_INT);
-        $result->bindParam(':description', $options['description'], PDO::PARAM_STR);
-        $result->bindParam(':is_new', $options['is_new'], PDO::PARAM_INT);
-        $result->bindParam(':is_recommended', $options['is_recommended'], PDO::PARAM_INT);
-        $result->bindParam(':status', $options['status'], PDO::PARAM_INT);
-        return $result->execute();
-    }
-
-    /**
-     * Добавляет новый товар
-     * @param array $options <p>Массив с информацией о товаре</p>
-     * @return integer <p>id добавленной в таблицу записи</p>
-     */
-    public static function createRealty($options)
-    {
-        // Соединение с БД
-        $db = Db::getConnection();
-
-        // Текст запроса к БД
-            $sql = 'INSERT INTO realty '
-                . '(type, name, mini_descr, area, dist_sea, price_through, price, '
-                . 'action, discount, booking, description, bedrooms, capacity, '
-                . 'dist_tivat, dist_podg, transfer, internet, parking, child_bed, '
-                . 'cleaning, status) '
-                . 'VALUES '
-                . '(:type, :name, :mini_descr, :area, :dist_sea, :price_through, :price, '
-                . ':action, :discount, :booking, :description, :bedrooms, :capacity, '
-                . ':dist_tivat, :dist_podg, :transfer, :internet, '
-                . ':parking, :child_bed, :cleaning, :status)';
-
-        // Получение и возврат результатов. Используется подготовленный запрос
-        $result = $db->prepare($sql);
-        $result->bindParam(':type', $options['type'], PDO::PARAM_STR);
-        $result->bindParam(':name', $options['name'], PDO::PARAM_STR);
-        $result->bindParam(':mini_descr', $options['mini_descr'], PDO::PARAM_STR);
-        $result->bindParam(':area', $options['area'], PDO::PARAM_STR);
-        $result->bindParam(':dist_sea', $options['dist_sea'], PDO::PARAM_STR);
-        $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_INT);
-        $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
-        $result->bindParam(':action', $options['action'], PDO::PARAM_STR);
-        $result->bindParam(':discount', $options['discount'], PDO::PARAM_INT);
-        $result->bindParam(':booking', $options['booking'], PDO::PARAM_INT);
-        $result->bindParam(':description', $options['description'], PDO::PARAM_STR);
-        $result->bindParam(':bedrooms', $options['bedrooms'], PDO::PARAM_STR);
-        $result->bindParam(':capacity', $options['capacity'], PDO::PARAM_STR);
-        $result->bindParam(':dist_tivat', $options['dist_tivat'], PDO::PARAM_STR);
-        $result->bindParam(':dist_podg', $options['dist_podg'], PDO::PARAM_STR);
-        $result->bindParam(':transfer', $options['transfer'], PDO::PARAM_STR);
-        $result->bindParam(':internet', $options['internet'], PDO::PARAM_STR);
-        $result->bindParam(':parking', $options['parking'], PDO::PARAM_STR);
-        $result->bindParam(':child_bed', $options['child_bed'], PDO::PARAM_STR);
-        $result->bindParam(':cleaning', $options['cleaning'], PDO::PARAM_STR);
-        $result->bindParam(':status', $options['status'], PDO::PARAM_STR);
-
-        if ($result->execute()) {
-            // Если запрос выполенен успешно, возвращаем id добавленной записи
-            return $db->lastInsertId();
-        }
-        // Иначе возвращаем 0
-            return 0;
     }
 
     /**

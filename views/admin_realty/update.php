@@ -124,20 +124,9 @@
                             <option value="0" <?php if ($realty['status'] == 0) echo ' selected="selected"'; ?> >Не опубликовано</option>
                         </select> 
                         <br/><br/>
-
-                        <p>Изображение товара</p>
-                        <input type="file" name="image" placeholder="" value="">
-
-                        <br/><br/>
-
-                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
-
-                        <br/><br/>
-
                         
-                        <p>Изображение объекта</p>
-                        <img src="<?php echo Realty::getImage($realty['id']); ?>" width="200" alt="" />
-                        <input type="file" name="image" placeholder="" value="<?php echo $realty['image']; ?>">                  
+                        <p>Изображение объекта</p>                     
+                        <input type="file" name="image" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
                       
                         <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
                         

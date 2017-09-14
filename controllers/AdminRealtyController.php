@@ -63,13 +63,7 @@ class AdminRealtyController extends AdminBase
             // При необходимости можно валидировать значения нужным образом
             if (!isset($options['name']) || empty($options['name'])) {
                 $errors[] = 'Заполните поля';
-            }
-            
-//            d($_FILES);
-//            d($_POST);
-//            d($_SERVER['DOCUMENT_ROOT']);
-            
-            $tmpName = null;
+            }      
 
             if ($errors == false) {
                 // Если ошибок нет
@@ -77,24 +71,31 @@ class AdminRealtyController extends AdminBase
                 $id = Realty::createRealty($options);
 
                 // Если запись добавлена
-                if ($id) {
+                if ($id) { 
+                    $tmpNames = $_FILES['images']['tmp_name'];
+                    $originNames = $_FILES['images']['name'];
                     // Проверим, загружалось ли через форму изображение
-                        if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
-                            $tmpName = $_FILES['image']['tmp_name'];
-                            $originName = $_FILES['image']['name'];
-                            // Создаем папку, где имя папки - это имя объекта
-                            mkdir($_SERVER['DOCUMENT_ROOT'] . "/upload/images/" . $options['name']);
-                            // Если загружалось, переместим его в нужную папке, дадим новое имя
-                            move_uploaded_file($tmpName, $_SERVER['DOCUMENT_ROOT']
+                    if (is_uploaded_file($tmpNames[0])) {
+
+                        // Создаем папку, где имя папки - это имя объекта
+                        mkdir(ROOT . '/upload/images/' . $options['name']);
+                        
+                        // Перемещаем загруженные файлы в соответсвующую папку с именем объекта
+                        for ($i = 0; $i < count($tmpNames); $i++) {
+                            move_uploaded_file($tmpNames[$i], ROOT
                                     . '/upload/images/'
                                     . $options['name']
                                     . '/'
-                                    . $originName);
+                                    . $originNames[$i]);
+                        }                           
                     }
                 };
+                
+                // Получаем список имен загруженных файлов
+                $imgNameList = Realty::getImgNameList($options);
 
                 // Перенаправляем пользователя на страницу управлениями товарами
-                header("Location: /admin/realty");
+                //header("Location: /admin/realty");
             }
         }
 
@@ -137,6 +138,9 @@ class AdminRealtyController extends AdminBase
             // Перенаправляем пользователя на страницу управлениями товарами
             header("Location: /admin/realty");
         }
+
+        // Получаем список имен загруженных файлов
+        //$imgNameList = Realty::getImgNameList($options);
 
         // Подключаем вид
         require_once(ROOT . '/views/admin_realty/update.php');

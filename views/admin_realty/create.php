@@ -132,11 +132,16 @@
                         </select> 
                         <br/><br/>
                         
-                        <p>Изображение товара</p>
-                        <input type="file" name="image" placeholder="" value="">
+                        <p>Изображение объекта</p>
+                        <input type="file" name="images[]" placeholder="" value="" multiple>
 
-                        <br/><br/>
+                        <br/>
                         
+                        <?php foreach ($imgNameList as $imgName): ?>
+                            <img src="/upload/images/<?php echo $options['name']; ?>/<?php echo $imgName; ?>" width="150" height="100" alt="">
+                        <?php endforeach; ?>
+                        
+                        <br/>
                         <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
 
                         <br/><br/>
