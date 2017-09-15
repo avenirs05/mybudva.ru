@@ -125,7 +125,6 @@ class AdminRealtyController extends AdminBase
             // Сохраняем изменения
             if (Realty::updateRealtyById($id, $options)) {
 
-
                 // Если запись сохранена
                 // Проверим, загружалось ли через форму изображение
                 if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
@@ -136,11 +135,11 @@ class AdminRealtyController extends AdminBase
             }
 
             // Перенаправляем пользователя на страницу управлениями товарами
-            header("Location: /admin/realty");
+            //  header("Location: /admin/realty");
         }
-
+        
         // Получаем список имен загруженных файлов
-        //$imgNameList = Realty::getImgNameList($options);
+        $imgNameList = Realty::getImgNameList(null, $realty);
 
         // Подключаем вид
         require_once(ROOT . '/views/admin_realty/update.php');

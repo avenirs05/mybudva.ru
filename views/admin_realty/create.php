@@ -137,11 +137,14 @@
 
                         <br/>
                         
-                        <?php foreach ($imgNameList as $imgName): ?>
-                            <img src="/upload/images/<?php echo $options['name']; ?>/<?php echo $imgName; ?>" width="150" height="100" alt="">
-                        <?php endforeach; ?>
+                        <?php if (isset($imgNameList)): ?>
+                            <?php foreach ($imgNameList as $imgName): ?>
+                                <img src="/upload/images/<?php echo $options['name']; ?>/<?php echo $imgName; ?>" width="150" height="100" alt="">
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                         
-                        <br/>
+                        <br/><br/>
+                        
                         <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
 
                         <br/><br/>

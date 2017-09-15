@@ -101,14 +101,16 @@ class Realty
     }
     
     /**
-    * Добавляет новый объект
+    * Возвращает список имен изображений конкретного объекта по его имени
+    * В засисимости от того только что загрузилось или в бд уже есть if - elseif 
     * @param array $options <p>Массив с информацией об объекте</p>
-    * @return integer <p>id добавленной в таблицу записи</p>
+    * @return array $imgNameList<p> Массив имен изображений конкретного объекта</p>
     */
-    public static function getImgNameList($options)
+    public static function getImgNameList($options = null, $realty = null)
     {
         $imgNameList = [];
-        if (isset($_FILES)) {
+        // Для action creaate
+        if (!empty($_FILES)) {
             if ($handle = opendir(ROOT . "/upload/images/" . $options['name'])) {
                 while (($imgName = readdir($handle)) !== false) {
                     if ( ($imgName !== '.') && ($imgName !== '..') ) {
@@ -118,7 +120,18 @@ class Realty
                 
                 closedir($handle);
             }
-        }
+        // Для action update
+        } elseif (isset ($realty)) {
+            if ($handle = opendir(ROOT . "/upload/images/" . $realty['name'])) {
+                while (($imgName = readdir($handle)) !== false) {
+                    if (($imgName !== '.') && ($imgName !== '..')) {
+                        $imgNameList[] = $imgName;
+                    }
+                }
+
+                closedir($handle);
+            }
+        } 
         return $imgNameList;
     }        
 

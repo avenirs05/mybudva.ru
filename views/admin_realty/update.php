@@ -127,7 +127,16 @@
                         
                         <p>Изображение объекта</p>                     
                         <input type="file" name="image" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
-                      
+                        <br/><br/>
+                        
+                        <?php if (isset($imgNameList)): ?>
+                            <?php foreach ($imgNameList as $imgName): ?>
+                                <img src="/upload/images/<?php echo $realty['name']; ?>/<?php echo $imgName; ?>" width="150" height="100" alt="">
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                                
+                        <br/><br/>
+                                
                         <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
                         
                         <br/><br/>
