@@ -13,7 +13,6 @@ class Realty
     public static function createRealty($options) {
         // Соединение с БД
         $db = Db::getConnection();
-
         // Текст запроса к БД
         $sql = 'INSERT INTO realty '
                 . '(type, name, mini_descr, area, dist_sea, price_through, price, '
@@ -70,34 +69,62 @@ class Realty
         $db = Db::getConnection();
 
         // Текст запроса к БД
-        $sql = "UPDATE Realty
-            SET 
-                name = :name, 
-                code = :code, 
-                price = :price, 
-                category_id = :category_id, 
-                brand = :brand, 
-                availability = :availability, 
-                description = :description, 
-                is_new = :is_new, 
-                is_recommended = :is_recommended, 
-                status = :status
-            WHERE id = :id";
-
+        $sql = "UPDATE realty SET 
+                    type = :type, 
+                    name = :name,
+                    mini_descr = :mini_descr, 
+                    area = :area, 
+                    dist_sea = :dist_sea, 
+                    price_through = :price_through, 
+                    price = :price,  
+                    action = :action, 
+                    discount = :discount, 
+                    booking = :booking, 
+                    description = :description, 
+                    bedrooms = :bedrooms, 
+                    capacity = :capacity, 
+                    dist_tivat = :dist_tivat,  
+                    dist_podg = :dist_podg, 
+                    transfer = :transfer, 
+                    internet = :internet, 
+                    parking = :parking, 
+                    child_bed = :child_bed, 
+                    cleaning = :cleaning,
+                    status = :status
+                    WHERE id = :id";
+        //echo ($sql);
+        // Получение и возврат результатов. Используется подготовленный запрос
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
-        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        $result->bindParam(':type', $options['type'], PDO::PARAM_STR);
         $result->bindParam(':name', $options['name'], PDO::PARAM_STR);
-        $result->bindParam(':code', $options['code'], PDO::PARAM_STR);
+        $result->bindParam(':mini_descr', $options['mini_descr'], PDO::PARAM_STR);
+        $result->bindParam(':area', $options['area'], PDO::PARAM_STR);
+        $result->bindParam(':dist_sea', $options['dist_sea'], PDO::PARAM_STR);
+        $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_INT);
         $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
-        $result->bindParam(':category_id', $options['category_id'], PDO::PARAM_INT);
-        $result->bindParam(':brand', $options['brand'], PDO::PARAM_STR);
-        $result->bindParam(':availability', $options['availability'], PDO::PARAM_INT);
+        $result->bindParam(':action', $options['action'], PDO::PARAM_STR);
+        $result->bindParam(':discount', $options['discount'], PDO::PARAM_INT);
+        $result->bindParam(':booking', $options['booking'], PDO::PARAM_INT);
         $result->bindParam(':description', $options['description'], PDO::PARAM_STR);
-        $result->bindParam(':is_new', $options['is_new'], PDO::PARAM_INT);
-        $result->bindParam(':is_recommended', $options['is_recommended'], PDO::PARAM_INT);
-        $result->bindParam(':status', $options['status'], PDO::PARAM_INT);
-        return $result->execute();
+        $result->bindParam(':bedrooms', $options['bedrooms'], PDO::PARAM_STR);
+        $result->bindParam(':capacity', $options['capacity'], PDO::PARAM_STR);
+        $result->bindParam(':dist_tivat', $options['dist_tivat'], PDO::PARAM_STR);
+        $result->bindParam(':dist_podg', $options['dist_podg'], PDO::PARAM_STR);
+        $result->bindParam(':transfer', $options['transfer'], PDO::PARAM_STR);
+        $result->bindParam(':internet', $options['internet'], PDO::PARAM_STR);
+        $result->bindParam(':parking', $options['parking'], PDO::PARAM_STR);
+        $result->bindParam(':child_bed', $options['child_bed'], PDO::PARAM_STR);
+        $result->bindParam(':cleaning', $options['cleaning'], PDO::PARAM_STR);
+        $result->bindParam(':status', $options['status'], PDO::PARAM_STR);
+        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        
+        if ($result->execute()) {
+            // Если запрос выполенен успешно, возвращаем id измененной записи
+            return $id;
+        }
+        // Иначе возвращаем 0
+        return 0;
     }
     
     /**
@@ -106,32 +133,24 @@ class Realty
     * @param array $options <p>Массив с информацией об объекте</p>
     * @return array $imgNameList<p> Массив имен изображений конкретного объекта</p>
     */
-    public static function getImgNameList($options = null, $realty = null)
+    public static function getImgNameList($realty)
     {
-        $imgNameList = [];
-        // Для action creaate
-        if (!empty($_FILES)) {
-            if ($handle = opendir(ROOT . "/upload/images/" . $options['name'])) {
-                while (($imgName = readdir($handle)) !== false) {
-                    if ( ($imgName !== '.') && ($imgName !== '..') ) {
-                        $imgNameList[] = $imgName;
-                    }                    
-                }
-                
-                closedir($handle);
-            }
-        // Для action update
-        } elseif (isset ($realty)) {
+        $imgNameList = [];        
+        
+        $dirOfImgs = is_dir(ROOT . "/upload/images/" . $realty['name']);
+
+        if ($dirOfImgs) {
             if ($handle = opendir(ROOT . "/upload/images/" . $realty['name'])) {
                 while (($imgName = readdir($handle)) !== false) {
                     if (($imgName !== '.') && ($imgName !== '..')) {
                         $imgNameList[] = $imgName;
-                    }
-                }
+                 }
+             }
 
-                closedir($handle);
+            closedir($handle);
             }
-        } 
+        }        
+
         return $imgNameList;
     }        
 

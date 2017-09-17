@@ -5,10 +5,10 @@
         <group>
             <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/AdminRealtyController.php</file>
             <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/models/Realty.php</file>
+            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/update.php</file>
             <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/create.php</file>
             <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/index.php</file>
             <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/index.php</file>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/components/Debugger.php</file>
         </group>
     </open-files>
 </project-private>

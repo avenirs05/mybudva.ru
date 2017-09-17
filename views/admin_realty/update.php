@@ -126,7 +126,7 @@
                         <br/><br/>
                         
                         <p>Изображение объекта</p>                     
-                        <input type="file" name="image" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
+                        <input type="file" name="images[]" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
                         <br/><br/>
                         
                         <?php if (isset($imgNameList)): ?>

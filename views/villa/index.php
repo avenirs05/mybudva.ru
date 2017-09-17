@@ -33,8 +33,8 @@
                 </a>
             </div>
         </div> 
+        <hr>
     <?php endforeach; ?>
-    <hr>
 
 </div>
 

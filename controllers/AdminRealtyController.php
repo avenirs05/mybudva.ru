@@ -66,8 +66,7 @@ class AdminRealtyController extends AdminBase
             }      
 
             if ($errors == false) {
-                // Если ошибок нет
-                // Добавляем новый объект
+                // Если ошибок нет, добавляем новый объект
                 $id = Realty::createRealty($options);
 
                 // Если запись добавлена
@@ -75,11 +74,9 @@ class AdminRealtyController extends AdminBase
                     $tmpNames = $_FILES['images']['tmp_name'];
                     $originNames = $_FILES['images']['name'];
                     // Проверим, загружалось ли через форму изображение
-                    if (is_uploaded_file($tmpNames[0])) {
-
+                    if (is_uploaded_file($tmpNames[0])) {    
                         // Создаем папку, где имя папки - это имя объекта
-                        mkdir(ROOT . '/upload/images/' . $options['name']);
-                        
+                        mkdir(ROOT . '/upload/images/' . $options['name']);                        
                         // Перемещаем загруженные файлы в соответсвующую папку с именем объекта
                         for ($i = 0; $i < count($tmpNames); $i++) {
                             move_uploaded_file($tmpNames[$i], ROOT
@@ -89,13 +86,10 @@ class AdminRealtyController extends AdminBase
                                     . $originNames[$i]);
                         }                           
                     }
-                };
-                
-                // Получаем список имен загруженных файлов
-                $imgNameList = Realty::getImgNameList($options);
+                };             
 
                 // Перенаправляем пользователя на страницу управлениями товарами
-                //header("Location: /admin/realty");
+                header("Location: /admin/realty");
             }
         }
 
@@ -117,29 +111,87 @@ class AdminRealtyController extends AdminBase
 
         // Обработка формы
         if (isset($_POST['submit'])) {
+
             // Если форма отправлена
             // Получаем данные из формы редактирования. При необходимости можно валидировать значения
+            $options['type'] = $_POST['type'];
             $options['name'] = $_POST['name'];
+            $options['mini_descr'] = $_POST['mini_descr'];
+            $options['area'] = $_POST['area'];
+            $options['dist_sea'] = $_POST['dist_sea'];
+            $options['price_through'] = $_POST['price_through'];
             $options['price'] = $_POST['price'];
-
-            // Сохраняем изменения
-            if (Realty::updateRealtyById($id, $options)) {
-
-                // Если запись сохранена
-                // Проверим, загружалось ли через форму изображение
-                if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
-
-                    // Если загружалось, переместим его в нужную папке, дадим новое имя
-                   move_uploaded_file($_FILES["image"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/Realtys/{$id}.jpg");
+            $options['action'] = $_POST['action'];
+            $options['discount'] = $_POST['discount'];
+            $options['booking'] = $_POST['booking'];
+            $options['description'] = $_POST['description'];
+            $options['bedrooms'] = $_POST['bedrooms'];
+            $options['capacity'] = $_POST['capacity'];
+            $options['dist_tivat'] = $_POST['dist_tivat'];
+            $options['dist_podg'] = $_POST['dist_podg'];
+            $options['transfer'] = $_POST['transfer'];
+            $options['internet'] = $_POST['internet'];
+            $options['parking'] = $_POST['parking'];
+            $options['child_bed'] = $_POST['child_bed'];
+            $options['cleaning'] = $_POST['cleaning'];
+            $options['status'] = $_POST['status'];
+            
+            // Если меняется имя объекта, то удаляем старую директорию 
+            // вместе с изображениями и создаем новую с новым
+            if ($options['name'] !== $realty['name']) {
+                mkdir(ROOT . '/upload/images/' . $options['name']);
+                if ($handle = opendir(ROOT . "/upload/images/" . $realty['name'])) {
+                    while ( ($imgName = readdir($handle) ) !== false) {                        
+                        if ( ($imgName !== '.') && ($imgName !== '..') ) {
+                            rename(ROOT.'/upload/images/'.$realty['name'].'/'.$imgName,
+                                   ROOT.'/upload/images/'.$options['name'].'/'.$imgName);                      
+                        }
+                    }
+                    rmdir(ROOT . '/upload/images/' . $realty['name']);
+                    closedir($handle);
                 }
             }
 
+            // Сохраняем изменения
+            $id = Realty::updateRealtyById($id, $options);
+//            d($_FILES);
+            // Если запись изменена
+            if ($id) {
+                $tmpNames = $_FILES['images']['tmp_name'];
+                $originNames = $_FILES['images']['name'];
+                $dirOfImgs = is_dir(ROOT . "/upload/images/" . $realty['name']);
+                
+                // Проверим, загружалось ли через форму изображение
+                if (is_uploaded_file($tmpNames[0]) && $dirOfImgs === true ) {
+                    // Перемещаем загруженные файлы в соответсвующую папку с именем объекта
+                    for ($i = 0; $i < count($tmpNames); $i++) {
+                        move_uploaded_file($tmpNames[$i], ROOT
+                                . '/upload/images/'
+                                . $options['name']
+                                . '/'
+                                . $originNames[$i]);
+                    }
+                }
+                if (is_uploaded_file($tmpNames[0]) && $dirOfImgs === false) {
+                    // Создаем папку, где имя папки - это имя объекта
+                    mkdir(ROOT . '/upload/images/' . $realty['name']);
+                    // Перемещаем загруженные файлы в соответсвующую папку с именем объекта
+                    for ($i = 0; $i < count($tmpNames); $i++) {
+                        move_uploaded_file($tmpNames[$i], ROOT
+                                . '/upload/images/'
+                                . $options['name']
+                                . '/'
+                                . $originNames[$i]);
+                    }
+                }
+            };
+
             // Перенаправляем пользователя на страницу управлениями товарами
-            //  header("Location: /admin/realty");
-        }
-        
+            header("Location: /admin/realty");
+        }   
+
         // Получаем список имен загруженных файлов
-        $imgNameList = Realty::getImgNameList(null, $realty);
+        $imgNameList = Realty::getImgNameList($realty);
 
         // Подключаем вид
         require_once(ROOT . '/views/admin_realty/update.php');
