@@ -111,7 +111,6 @@ class AdminRealtyController extends AdminBase
 
         // Обработка формы
         if (isset($_POST['submit'])) {
-
             // Если форма отправлена
             // Получаем данные из формы редактирования. При необходимости можно валидировать значения
             $options['type'] = $_POST['type'];
@@ -161,7 +160,8 @@ class AdminRealtyController extends AdminBase
                 $originNames = $_FILES['images']['name'];
                 $dirOfImgs = is_dir(ROOT . "/upload/images/" . $realty['name']);
                 
-                // Проверим, загружалось ли через форму изображение
+                // Проверим, загружалось ли через форму изображение 
+                // и есть ли директория с именем объекта 
                 if (is_uploaded_file($tmpNames[0]) && $dirOfImgs === true ) {
                     // Перемещаем загруженные файлы в соответсвующую папку с именем объекта
                     for ($i = 0; $i < count($tmpNames); $i++) {
@@ -172,6 +172,7 @@ class AdminRealtyController extends AdminBase
                                 . $originNames[$i]);
                     }
                 }
+                // Есть изображение загружалось, но директории с именем объекта нет
                 if (is_uploaded_file($tmpNames[0]) && $dirOfImgs === false) {
                     // Создаем папку, где имя папки - это имя объекта
                     mkdir(ROOT . '/upload/images/' . $realty['name']);
@@ -184,7 +185,7 @@ class AdminRealtyController extends AdminBase
                                 . $originNames[$i]);
                     }
                 }
-            };
+            }
 
             // Перенаправляем пользователя на страницу управлениями товарами
             header("Location: /admin/realty");

@@ -42,6 +42,12 @@ a {
 	border: 1px solid red;
 }
 
+.img-wrap-mini {
+	width: 150px;
+	height: 100px;
+	display: inline-block;
+}
+
 .container
 .container-fluid {
 	padding-right: 70px; 
@@ -50,11 +56,6 @@ a {
 
 .hot-offers h2 {
 	color: #ED1C24;
-}
-
-.hot-offers h3 {
-/*	font-family: 'OpenSansCondensedLight', sans-serif;*/
-/*	font-size: 36px;*/
 }
 
 .hot-offers hr {

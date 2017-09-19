@@ -46,4 +46,12 @@ $(document).ready(function () {
             $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
         }
     });
+
+    var inputFile = $('input[type="file"]');
+    $(document).on('change', inputFile, function () {
+        alert( $(inputFile).get(0).files.item(0).name );
+    });
+    
+
+    //alert(x);
 });

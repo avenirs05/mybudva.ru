@@ -17,6 +17,25 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.img-wrap-mini {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    left: 92%;
+    opacity: 0.5;
+    top: -2%;
+}
+
+.close:hover {
+    opacity: 0.9;
+}
+
 .page-wrapper {
     min-height: 100%;
     margin-bottom: -50px;

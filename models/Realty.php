@@ -127,6 +127,24 @@ class Realty
         return 0;
     }
     
+     /**
+     * Удаляет объект с указанным id
+     * @param integer $id <p>id объекта</p>
+     * @return boolean <p>Результат выполнения метода</p>
+     */
+    public static function deleteRealtyById($id) {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'DELETE FROM realty WHERE id = :id';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        return $result->execute();
+    }
+
     /**
     * Возвращает список имен изображений конкретного объекта по его имени
     * В засисимости от того только что загрузилось или в бд уже есть if - elseif 
@@ -152,9 +170,7 @@ class Realty
         }        
 
         return $imgNameList;
-    }        
-
-
+    }      
 
     // Количество отображаемых объектов по умолчанию
     const SHOW_BY_DEFAULT = 6;
@@ -265,7 +281,8 @@ class Realty
 
         // Получение и возврат результатов
         return $result->fetch();
-    }
+    }    
+
 
     /**
      * Возвращаем количество товаров в указанной категории
@@ -373,25 +390,7 @@ class Realty
         }
         return $realtysList;
     }
-
-    /**
-     * Удаляет товар с указанным id
-     * @param integer $id <p>id товара</p>
-     * @return boolean <p>Результат выполнения метода</p>
-     */
-    public static function deleteRealtyById($id)
-    {
-        // Соединение с БД
-        $db = Db::getConnection();
-
-        // Текст запроса к БД
-        $sql = 'DELETE FROM Realty WHERE id = :id';
-
-        // Получение и возврат результатов. Используется подготовленный запрос
-        $result = $db->prepare($sql);
-        $result->bindParam(':id', $id, PDO::PARAM_INT);
-        return $result->execute();
-    }
+    
 
     /**
      * Возвращает текстое пояснение наличия товара:<br/>
