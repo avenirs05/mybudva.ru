@@ -133,8 +133,8 @@
                             <?php foreach ($imgNameList as $imgName): ?>
                                 <div class="img-wrap-mini">
                                     <div class="close">x</div>
-                                    <img src="/upload/images/<?php echo $realty['name']; ?>/<?php echo $imgName; ?>" width="150" height="100" alt="">
-                                </div>
+                                    <img id="<?php echo $imgName; ?>" src="/upload/images/<?php echo $realty['name']; ?>/<?php echo $imgName; ?>" width="150" height="100" alt="">
+                                </div>                                
                             <?php endforeach; ?>
                         <?php endif; ?>
                                 

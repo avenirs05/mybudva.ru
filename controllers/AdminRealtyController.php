@@ -138,22 +138,47 @@ class AdminRealtyController extends AdminBase
             // Если меняется имя объекта, то удаляем старую директорию 
             // вместе с изображениями и создаем новую с новым
             if ($options['name'] !== $realty['name']) {
-                mkdir(ROOT . '/upload/images/' . $options['name']);
                 if ($handle = opendir(ROOT . "/upload/images/" . $realty['name'])) {
-                    while ( ($imgName = readdir($handle) ) !== false) {                        
-                        if ( ($imgName !== '.') && ($imgName !== '..') ) {
-                            rename(ROOT.'/upload/images/'.$realty['name'].'/'.$imgName,
-                                   ROOT.'/upload/images/'.$options['name'].'/'.$imgName);                      
-                        }
-                    }
-                    rmdir(ROOT . '/upload/images/' . $realty['name']);
+                    rename(ROOT.'/upload/images/'. $realty['name'],
+                           ROOT.'/upload/images/'. $options['name']);
+
                     closedir($handle);
                 }
+
+                // if ($handle = opendir(ROOT . "/upload/images/")) {
+                //     if (is_dir(ROOT.'/upload/images/'. $realty['name'])) {
+                //         rmdir(ROOT . '/upload/images/' . $realty['name']);
+                //     }
+
+                //     closedir($handle);
+                // }
+
+
+
+                // if ($handle = opendir(ROOT . "/upload/images/")) {
+                //     rmdir(ROOT . '/upload/images/' . $realty['name']);
+                //     closedir($handle);
+                // }
+
+
+                // if ($handle = opendir(ROOT . "/upload/images/" . $realty['name'])) {
+                //     while ( ($imgName = readdir($handle) ) !== false) {                        
+                //         if ( ($imgName !== '.') && ($imgName !== '..') ) {
+                //             rename(ROOT.'/upload/images/'.$realty['name'].'/'.$imgName,
+                //                    ROOT.'/upload/images/'.$options['name'].'/'.$imgName);                      
+                //         }
+                //     }
+                //     rmdir(ROOT . '/upload/images/' . $realty['name']);
+                //     closedir($handle);
+                // }
+                //closedir($handle);
             }
+
+
 
             // Сохраняем изменения
             $id = Realty::updateRealtyById($id, $options);
-//            d($_FILES);
+
             // Если запись изменена
             if ($id) {
                 $tmpNames = $_FILES['images']['tmp_name'];
@@ -200,7 +225,7 @@ class AdminRealtyController extends AdminBase
     }
 
     /**
-     * Action для страницы "Удалить товар"
+     * Action для страницы "Удалить объект"
      */
     public function actionDelete($id)
     {
@@ -219,6 +244,21 @@ class AdminRealtyController extends AdminBase
 
         // Подключаем вид
         require_once(ROOT . '/views/admin_Realty/delete.php');
+        return true;
+    }
+
+    /**
+     * Action для удаления картинки при редактировании объекта
+     */
+    public function actionDeleteImg($imgName)
+    {
+        // Проверка доступа
+        self::checkAdmin();
+
+        // Realty::deleteImgByName($imgName);
+
+
+
         return true;
     }
 

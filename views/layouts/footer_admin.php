@@ -30,7 +30,9 @@
                 $("#cart-count").html(data);
             });
             return false;
-        });
+        });       
+
+
     });
 </script>
 

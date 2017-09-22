@@ -45,13 +45,39 @@ $(document).ready(function () {
         else {
             $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
         }
-    });
+    }); 
 
-    var inputFile = $('input[type="file"]');
-    $(document).on('change', inputFile, function () {
-        alert( $(inputFile).get(0).files.item(0).name );
-    });
-    
+    function deleteImg() {
+        $(this).parent().hide();
+        var imgName = $(this).next().attr('id');
+        alert( imgName );
+        $.ajax({
+            type: 'POST', 
+            url: 'admin/realty/deleteimg' + imgName,
+            // dataType: 'json',
+            // success: function (data) {
+            //     if (data.success) {
+            //         $('#cartCntItems').html(data.cntItems);
+            //         $('#addCart_' + itemId).hide();
+            //         $('#removeCart_' + itemId).show();
+            //     }
+            // }
+        });
+    }
 
-    //alert(x);
+    $('.close').click(deleteImg);
+
+    // var inputFile = $('input[type="file"]');
+    // $("html").on('change', inputFile, function () {
+    //         var imgMini = null;
+    //         var fileName = null;            
+    //         // Количество загруженных файлов
+    //         var loadedFiles = $(inputFile).get(0).files.length;            
+    //         for (var i = loadedFiles - 1; i >= 0; i--) {                
+    //             fileName = $(inputFile).get(0).files.item(i).name;
+    //             inputFile.after('<p>' + fileName +'</p>');
+    //         }
+    // });    
+
+
 });

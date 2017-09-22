@@ -145,6 +145,15 @@ class Realty
         return $result->execute();
     }
 
+     /**
+     * Удаляет картинку с указанным id
+     * @param string $id <p>id картинки</p>
+     * @return boolean <p>Результат выполнения метода</p>
+     */
+    public static function deleteImgByName($imgName) {
+
+    }
+
     /**
     * Возвращает список имен изображений конкретного объекта по его имени
     * В засисимости от того только что загрузилось или в бд уже есть if - elseif 

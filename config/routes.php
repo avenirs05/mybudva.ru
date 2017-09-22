@@ -49,6 +49,9 @@ return array(
 
     // Удаление объекта
     'admin/realty/delete/([0-9]+)' => 'adminRealty/delete/$1',
+
+    // Удаление картинки
+    'admin/realty/deleteImg/(\w+)' => 'adminRealty/deleteImg/$1',
     
     // Управление объектами недвижимости
     'admin/realty' => 'adminRealty/index',
