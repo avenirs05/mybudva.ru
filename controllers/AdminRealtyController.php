@@ -144,37 +144,7 @@ class AdminRealtyController extends AdminBase
 
                     closedir($handle);
                 }
-
-                // if ($handle = opendir(ROOT . "/upload/images/")) {
-                //     if (is_dir(ROOT.'/upload/images/'. $realty['name'])) {
-                //         rmdir(ROOT . '/upload/images/' . $realty['name']);
-                //     }
-
-                //     closedir($handle);
-                // }
-
-
-
-                // if ($handle = opendir(ROOT . "/upload/images/")) {
-                //     rmdir(ROOT . '/upload/images/' . $realty['name']);
-                //     closedir($handle);
-                // }
-
-
-                // if ($handle = opendir(ROOT . "/upload/images/" . $realty['name'])) {
-                //     while ( ($imgName = readdir($handle) ) !== false) {                        
-                //         if ( ($imgName !== '.') && ($imgName !== '..') ) {
-                //             rename(ROOT.'/upload/images/'.$realty['name'].'/'.$imgName,
-                //                    ROOT.'/upload/images/'.$options['name'].'/'.$imgName);                      
-                //         }
-                //     }
-                //     rmdir(ROOT . '/upload/images/' . $realty['name']);
-                //     closedir($handle);
-                // }
-                //closedir($handle);
             }
-
-
 
             // Сохраняем изменения
             $id = Realty::updateRealtyById($id, $options);
@@ -197,10 +167,8 @@ class AdminRealtyController extends AdminBase
                                 . $originNames[$i]);
                     }
                 }
-                // Есть изображение загружалось, но директории с именем объекта нет
+                //Если изображение загружалось, но директории с именем объекта нет
                 if (is_uploaded_file($tmpNames[0]) && $dirOfImgs === false) {
-                    // Создаем папку, где имя папки - это имя объекта
-                    mkdir(ROOT . '/upload/images/' . $realty['name']);
                     // Перемещаем загруженные файлы в соответсвующую папку с именем объекта
                     for ($i = 0; $i < count($tmpNames); $i++) {
                         move_uploaded_file($tmpNames[$i], ROOT
@@ -208,7 +176,7 @@ class AdminRealtyController extends AdminBase
                                 . $options['name']
                                 . '/'
                                 . $originNames[$i]);
-                    }
+                    }                    
                 }
             }
 
@@ -256,9 +224,6 @@ class AdminRealtyController extends AdminBase
         self::checkAdmin();
 
         // Realty::deleteImgByName($imgName);
-
-
-
         return true;
     }
 
