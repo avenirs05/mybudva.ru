@@ -48,10 +48,10 @@ return array(
     'admin/realty/update/([0-9]+)' => 'adminRealty/update/$1',
 
     // Удаление объекта
-    'admin/realty/delete/([0-9]+)' => 'adminRealty/delete/$1',
+    'admin/realty/delete/([0-9]+)/(\w+)' => 'adminRealty/delete/$1/$2',
 
     // Удаление картинки
-    'admin/realty/deleteImg/(\w+)' => 'adminRealty/deleteImg/$1',
+    'admin/realty/deleteImg/(\w+)/(\w+)' => 'adminRealty/deleteImg/$1/$2',
     
     // Управление объектами недвижимости
     'admin/realty' => 'adminRealty/index',

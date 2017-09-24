@@ -98,6 +98,7 @@ class AdminRealtyController extends AdminBase
         return true;
     }
 
+
     /**
      * Action для страницы "Редактировать объект"
      */
@@ -195,7 +196,7 @@ class AdminRealtyController extends AdminBase
     /**
      * Action для страницы "Удалить объект"
      */
-    public function actionDelete($id)
+    public function actionDelete($id, $name)
     {
         // Проверка доступа
         self::checkAdmin();
@@ -204,26 +205,26 @@ class AdminRealtyController extends AdminBase
         if (isset($_POST['submit'])) {
             // Если форма отправлена
             // Удаляем товар
-            Realty::deleteRealtyById($id);
+            Realty::deleteRealty($id, $name);
 
             // Перенаправляем пользователя на страницу управлениями товарами
-            header("Location: /admin/Realty");
+            header("Location: /admin/realty");
         }
 
         // Подключаем вид
-        require_once(ROOT . '/views/admin_Realty/delete.php');
+        require_once(ROOT . '/views/admin_realty/delete.php');
         return true;
     }
 
     /**
      * Action для удаления картинки при редактировании объекта
      */
-    public function actionDeleteImg($imgName)
-    {
-        // Проверка доступа
+    public function actionDeleteImg($folderName, $imgName)
+    {       
+        //Проверка доступа
         self::checkAdmin();
 
-        // Realty::deleteImgByName($imgName);
+        Realty::deleteImgByName($folderName, $imgName);
         return true;
     }
 

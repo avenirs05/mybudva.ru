@@ -92,8 +92,7 @@ class Realty
                     cleaning = :cleaning,
                     status = :status
                     WHERE id = :id";
-        //echo ($sql);
-        // Получение и возврат результатов. Используется подготовленный запрос
+
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':type', $options['type'], PDO::PARAM_STR);
@@ -127,14 +126,30 @@ class Realty
         return 0;
     }
     
-     /**
-     * Удаляет объект с указанным id
-     * @param integer $id <p>id объекта</p>
-     * @return boolean <p>Результат выполнения метода</p>
-     */
-    public static function deleteRealtyById($id) {
+    /**
+    * Удаляет объект с указанным id
+    * @param integer $id <p>id объекта</p>
+    * @return boolean <p>Результат выполнения метода</p>
+    */
+    public static function deleteRealty($id, $name) 
+    {
+
+
         // Соединение с БД
         $db = Db::getConnection();
+
+        $realty = Realty::getRealtyById($id);
+
+        // Удаляем папку с файлами-картинками
+        if ($handle = opendir(ROOT . "/upload/images/" . $realty['name'])) {
+             while ( ($imgName = readdir($handle) ) !== false) {                        
+                 if ( ($imgName !== '.') && ($imgName !== '..') ) {
+                    unlink(ROOT . "/upload/images/" . $name . '/' . $imgName);                
+                 }
+             }
+             rmdir(ROOT . '/upload/images/' . $name);
+             closedir($handle);
+         }         
 
         // Текст запроса к БД
         $sql = 'DELETE FROM realty WHERE id = :id';
@@ -145,14 +160,16 @@ class Realty
         return $result->execute();
     }
 
-     /**
-     * Удаляет картинку с указанным id
-     * @param string $id <p>id картинки</p>
-     * @return boolean <p>Результат выполнения метода</p>
-     */
-    public static function deleteImgByName($imgName) {
 
+    /**
+    * Удаляет картинку с указанным id
+    * @param string $imgName <p>имя картинки</p>
+    * @return boolean <p>Результат выполнения метода</p>
+    */
+    public static function deleteImgByName($folderName, $imgName) {     
+        unlink(ROOT . '/upload/images/' . $folderName . '/' . $imgName);
     }
+
 
     /**
     * Возвращает список имен изображений конкретного объекта по его имени
@@ -352,6 +369,7 @@ class Realty
         return $Realtys;
     }
 
+
     /**
      * Возвращает список рекомендуемых товаров
      * @return array <p>Массив с товарами</p>
@@ -376,6 +394,7 @@ class Realty
         }
         return $RealtysList;
     }
+
 
     /**
      * Возвращает список товаров
