@@ -42,6 +42,12 @@ a {
 	border: 1px solid red;
 }
 
+/*Lightgallery*/
+
+/*Lightgallery*/
+
+
+
 .img-wrap-mini {
 	width: 150px;
 	height: 100px;
@@ -345,9 +351,24 @@ a {
 
 /*LightGallery*/
 #lightgallery img {
-	margin-bottom: 5px;
+	/*margin-bottom: 2px;*/
+	/*display: inline-block;*/
+
 }
+#lightgallery a {
+	display: block;	
+	width: 82px;
+	height: 54px;
+	float: right;
+	border: 1px solid white;
+	/*border-bottom: 3px solid white;*/
+}
+
+
+
+
 /*LightGallery*/
+
 
 @media screen and (min-device-width: 320px) {
 	body {

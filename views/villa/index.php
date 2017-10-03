@@ -29,7 +29,7 @@
                     <span>€ <?php echo $villaItem['price']; ?></span>
                 </div>
                 <a class="text-right" href="#">
-                    <a href="/villa/single/<?php echo $villaItem['id']; ?>.php" target="_blank"><button>Подробнее</button></a>
+                    <a href="/villa/single/<?php echo $villaItem['name']; ?>/<?php echo $villaItem['id']; ?>.php" target="_blank"><button>Подробнее</button></a>
                 </a>
             </div>
         </div> 

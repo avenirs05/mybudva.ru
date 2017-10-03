@@ -22,19 +22,33 @@
 <script src="/template/js/price-range.js"></script>
 <script src="/template/js/jquery.prettyPhoto.js"></script>
 <script src="/template/js/main.js"></script>
+
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=vy3vaye6rc8e46thnmdeudq9ngbbd9yvpplkx1zyjohyifon"></script>
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+<script>tinymce.init({ selector:'textarea', height : "480" });</script>
+
 <script>
     $(document).ready(function(){
+        
         $(".add-to-cart").click(function () {
             var id = $(this).attr("data-id");
             $.post("/cart/addAjax/"+id, {}, function (data) {
                 $("#cart-count").html(data);
             });
             return false;
-        });       
+        });  
+
+        $("#description_ifr").height(300);
+
+        alert('hhh');
+
 
 
     });
 </script>
+
+
+
 
 </body>
 </html>

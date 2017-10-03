@@ -216,6 +216,7 @@ class AdminRealtyController extends AdminBase
         return true;
     }
 
+
     /**
      * Action для удаления картинки при редактировании объекта
      */

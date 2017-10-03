@@ -60,4 +60,6 @@ $(document).ready(function () {
 
     $('.close').click(deleteImg);
 
+
+
 });

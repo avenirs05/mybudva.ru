@@ -134,7 +134,6 @@ class Realty
     public static function deleteRealty($id, $name) 
     {
 
-
         // Соединение с БД
         $db = Db::getConnection();
 
@@ -437,6 +436,7 @@ class Realty
                 break;
         }
     }
+    
 
     /**
      * Возвращает путь к изображению

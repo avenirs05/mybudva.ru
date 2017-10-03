@@ -25,7 +25,7 @@
                 </ul>
             <?php endif; ?>
 
-            <div class="col-lg-4">
+            <div class="col-lg-9">
                 <div class="login-form">
                     <form action="#" method="post" enctype="multipart/form-data">
                         

@@ -20,10 +20,13 @@ class VillaController
         return true;
     }
 
-    public function actionSingle($id)
+    public function actionSingle($nameOfVilla, $id)
     {
         // Получаем конкретную виллу (массив с данными) по ее id
         $villa = Villa::getVillaById($id);
+
+        // Получаем имена картинок
+        $imgNameList = Realty::getImgNameList($villa);
 
         // Подключаем вид
         require_once(ROOT . '/views/villa/single.php');

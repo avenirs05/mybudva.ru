@@ -60,7 +60,7 @@ return array(
     'admin' => 'admin/index',
 
     // Одиночная запись - одна вилла
-    'villa/single/([0-9]+)' => 'villa/single/$1', 
+    'villa/single/(\w+)/([0-9]+)' => 'villa/single/$1/$2', 
 
     // Страницы Виллы и Апартаменты
     'villa' => 'villa/index',

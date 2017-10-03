@@ -11,7 +11,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="shortcut icon" href="/imgs/fav.ico" type="image/png">
-    <link type="text/css" rel="stylesheet" href="css/lightgallery.css">
+    <link type="text/css" rel="stylesheet" href="/css/lightgallery.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/style.css" rel="stylesheet">
 
@@ -46,6 +46,10 @@
               $(".footer").addClass("navbar-fixed-bottom");
             }
             // Конец. Прижать футер к низу
+
+            $('#lightgallery img').width('82');
+            $('#lightgallery img').height('54');
+            
 
         });
     </script>
