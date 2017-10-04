@@ -16,11 +16,16 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 /*.btn btn-default {
     background-color: green;
 }*/
+
+.admin-main-menu {
+    font-size: 24px;
+}
 
 .img-wrap-mini {
     width: 150px;
@@ -106,7 +111,12 @@ a#scrollUp i{
 **************************/
 
 .header_top {
-    background: none repeat scroll 0 0 #F0F0E9;
+    /*background: none repeat scroll 0 0 #F0F0E9;*/
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #fff;
+    color: blue;
 }
 
 .contactinfo ul li:first-child{
@@ -146,7 +156,7 @@ a#scrollUp i{
 }
 
 .social-icons ul li a i:hover{
-    color: #fff;
+    color: #000;
     transition: all 0.9s ease 0s;
     -moz-transition: all 0.9s ease 0s;
     -webkit-transition: all 0.9s ease 0s;
@@ -384,7 +394,7 @@ ul.sub-menu {
 **************************/
 
 #footer {
-    background: #F0F0E9;
+    /*background: #F0F0E9;*/
     height: 50px;
 }
 

@@ -15,7 +15,7 @@
             </div>
 
 
-            <h4>Редактировать объект #<?php echo $id; ?></h4>
+            <h4><strong><?php echo $realty['name'];?> - №<?php echo $id; ?> </strong></h4>
 
             <br/>
 
@@ -23,111 +23,122 @@
                 <div class="login-form">
                     <form action="#" method="post" enctype="multipart/form-data">
                        
-                        <p>Тип объекта</p>
+                        <span>Тип объекта</span>
                         <select name="type">
                             <option value="вилла" <?php if ($realty['type'] == 'вилла') echo ' selected="selected"'; ?>>Вилла</option>
                             <option value="апартамент" <?php if ($realty['type'] == 'апартамент') echo ' selected="selected"'; ?> >Апартамент</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Название</p>
+                        <span>Название</span>
                         <input type="text" name="name" placeholder="" value="<?php echo $realty['name']; ?>">
+                        <br/>
 
-                        <p>Мини-описание</p>
+                        <span>Мини-описание</span>
                         <input type="text" name="mini_descr" placeholder="" value="<?php echo $realty['mini_descr']; ?>">
+                        <br/>
 
-                        <p>Площадь</p>
+                        <span>Площадь</span>
                         <input type="text" name="area" placeholder="" value="<?php echo $realty['area']; ?>">
+                        <br/>
 
-                        <p>Расстояние до моря</p>
+                        <span>Расстояние до моря</span>
                         <input type="text" name="dist_sea" placeholder="" value="<?php echo $realty['dist_sea']; ?>">
+                        <br/>
 
-                        <p>Цена перечеркнутая, €</p>
+                        <span>Цена перечеркнутая, €</span>
                         <input type="text" name="price_through" placeholder="" value="<?php echo $realty['price_through']; ?>">
+                        <br/>
 
-                        <p>Цена, €</p>
+                        <span>Цена, €</span>
                         <input type="text" name="price" placeholder="" value="<?php echo $realty['price']; ?>"> 
+                        <br/>
 
-                        <p>Акция</p>
+                        <span>Акция</span>
                         <select name="action">
                             <option value="1" <?php if ($realty['action'] == 1) echo ' selected="selected"'; ?> >Есть</option>
                             <option value="0" <?php if ($realty['action'] == 0) echo ' selected="selected"'; ?> >Нет</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Скидка</p>
+                        <span>Скидка</span>
                         <select name="discount">
                             <option value="1" <?php if ($realty['discount'] == 1) echo ' selected="selected"'; ?> >Есть</option>
                             <option value="0" <?php if ($realty['discount'] == 0) echo ' selected="selected"'; ?> >Нет</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Booking</p>
+                        <span>Booking</span>
                         <select name="booking">
                             <option value="1" <?php if ($realty['booking'] == 1) echo ' selected="selected"'; ?> >Есть</option>
                             <option value="0" <?php if ($realty['booking'] == 0) echo ' selected="selected"'; ?> >Нет</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Подробное описание</p>
-                        <textarea name="description"><?php echo $realty['description']; ?></textarea>
+                        <span>Количество спален</span>
+                        <input type="text" name="bedrooms" placeholder="" value="<?php echo $realty['bedrooms']; ?>">
+                        <br/> 
 
-                        <p>Количество спален</p>
-                        <input type="text" name="bedrooms" placeholder="" value="<?php echo $realty['bedrooms']; ?>"> 
-
-                        <p>Вместимость объекта, человек</p>
-                        <input type="text" name="capacity" placeholder="" value="<?php echo $realty['capacity']; ?>">                                             
-                        <p>Расстояние до а/п Тиват</p>
+                        <span>Вместимость объекта, человек</span>
+                        <input type="text" name="capacity" placeholder="" value="<?php echo $realty['capacity']; ?>">
+                        <br/>                                             
+                        <span>Расстояние до а/п Тиват</span>
                         <input type="text" name="dist_tivat" placeholder="" value="<?php echo $realty['dist_tivat']; ?>"> 
+                        <br/>
 
-                        <p>Расстояние до а/п Подгорица</p>
+                        <span>Расстояние до а/п Подгорица</span>
                         <input type="text" name="dist_podg" placeholder="" value="<?php echo $realty['dist_podg']; ?>"> 
+                        <br/>
 
-                        <p>Трансфер</p>
+                        <span>Трансфер</span>
                         <select name="transfer">
                             <option value="1" <?php if ($realty['transfer'] == 1) echo ' selected="selected"'; ?> >Платный</option>
                             <option value="0" <?php if ($realty['transfer'] == 0) echo ' selected="selected"'; ?> >Бесплатный</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Интернет</p>
+                        <span>Интернет</span>
                         <select name="internet">
                             <option value="1" <?php if ($realty['internet'] == 1) echo ' selected="selected"'; ?> >Платный</option>
                             <option value="0" <?php if ($realty['internet'] == 0) echo ' selected="selected"'; ?> >Бесплатный</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Паркинг</p>
+                        <span>Паркинг</span>
                         <select name="parking">
                             <option value="1" <?php if ($realty['parking'] == 1) echo ' selected="selected"'; ?> >Платный</option>
                             <option value="0" <?php if ($realty['parking'] == 0) echo ' selected="selected"'; ?> >Бесплатный</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Детская кроватка</p>
+                        <span>Детская кроватка</span>
                         <select name="child_bed">
                             <option value="1" <?php if ($realty['child_bed'] == 1) echo ' selected="selected"'; ?> >Платная</option>
                             <option value="0" <?php if ($realty['child_bed'] == 0) echo ' selected="selected"'; ?> >Бесплатная</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Уборка</p>
+                        <span>Уборка</span>
                         <select name="cleaning">
                             <option value="1" <?php if ($realty['cleaning'] == 1) echo ' selected="selected"'; ?> >Платная</option>
                             <option value="0" <?php if ($realty['cleaning'] == 0) echo ' selected="selected"'; ?> >Бесплатная</option>
                         </select> 
                         <br/><br/>
 
-                        <p>Статус</p>
+                        <span>Статус</span>
                         <select name="status">
                             <option value="1" <?php if ($realty['status'] == 1) echo ' selected="selected"'; ?> >Опубликовано</option>
                             <option value="0" <?php if ($realty['status'] == 0) echo ' selected="selected"'; ?> >Не опубликовано</option>
                         </select> 
                         <br/><br/>
+
+                        <span>Подробное описание</span>
+                        <textarea name="description"><?php echo $realty['description']; ?></textarea>
                         
-                        <p>Изображение объекта</p>                     
+                        
+                        <span>Изображение объекта</span>                     
                         <input type="file" name="images[]" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
-                        <br/><br/>
+                        <br/>
                         
                         <?php if (isset($imgNameList)): ?>
                             <?php foreach ($imgNameList as $imgName): ?>
@@ -138,16 +149,12 @@
                             <?php endforeach; ?>
                         <?php endif; ?>
                                 
-                        <br/><br/>
+                        <br/> <br/>
                                 
-                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
-                        
-                        <br/><br/>
-                        
+                        <input id="btn-save" type="submit" name="submit" class="btn btn-default" value="Сохранить">                      
                     </form>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

@@ -10,6 +10,7 @@
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
                     <li><a href="/admin/realty">Управление объектами</a></li>
+                    <li class="active">Добавить объект объект</li>
                 </ol>
             </div>
                         
@@ -60,7 +61,7 @@
                         <input type="text" name="price" placeholder="" value=""> 
                         <br/>
                         
-<!--                         <span>Акция</span>
+                        <span>Акция</span>
                         <select name="action">
                             <option value="1">Да</option>
                             <option value="0" selected="selected">Нет</option>
@@ -79,7 +80,7 @@
                             <option value="1">Да</option>
                             <option value="0" selected="selected">Нет</option>
                         </select> 
-                        <br/><br/> -->                     
+                        <br/><br/>                     
 
                         <span>Количество спален</span>
                         <input type="text" name="bedrooms" placeholder="" value=""> 
@@ -97,7 +98,7 @@
                         <input type="text" name="dist_podg" placeholder="" value=""> 
                         <br/>
 
-<!--                         <span>Трансфер</span>
+                        <span>Трансфер</span>
                         <select name="transfer">
                             <option value="1" selected="selected">Платный</option>
                             <option value="0">Бесплатный</option>
@@ -130,7 +131,7 @@
                             <option value="1">Платная</option>
                             <option value="0" selected="selected">Бесплатная</option>
                         </select> 
-                        <br/><br/> -->
+                        <br/><br/>
                         
                         <span>Статус</span>
                         <select name="status">
