@@ -13,7 +13,7 @@
                 </ol>
             </div>
                         
-            <h4>Добавить новый объект</h4>
+            <h4><strong>Добавить новый объект</strong></h4>
 
             <br/>
 
@@ -29,112 +29,122 @@
                 <div class="login-form">
                     <form action="#" method="post" enctype="multipart/form-data">
                         
-                        <p>Тип объекта</p>
+                        <span>Тип объекта</span>
                         <select name="type">
                             <option value="вилла">Вилла</option>
                             <option value="апартамент">Апартамент</option>
                         </select> 
                         <br/><br/>
                         
-                        <p>Название</p>
+                        <span>Название объекта</span>
                         <input type="text" name="name" placeholder="" value="">
+                        <br/>
 
-                        <p>Мини-описание</p>
+                        <span>Мини-описание</span>
                         <input type="text" name="mini_descr" placeholder="" value="">
+                        <br/>
                         
-                        <p>Площадь</p>
+                        <span>Площадь</span>
                         <input type="text" name="area" placeholder="" value="">
+                        <br/>
                         
-                        <p>Расстояние до моря</p>
+                        <span>Расстояние до моря</span>
                         <input type="text" name="dist_sea" placeholder="" value="">
+                        <br/>
 
-                        <p>Цена перечеркнутая, €</p>
+                        <span>Цена перечеркнутая, €</span>
                         <input type="text" name="price_through" placeholder="" value="">
+                        <br/>
                         
-                        <p>Цена, €</p>
+                        <span>Цена, €</span>
                         <input type="text" name="price" placeholder="" value=""> 
+                        <br/>
                         
-                        <p>Акция</p>
+<!--                         <span>Акция</span>
                         <select name="action">
                             <option value="1">Да</option>
                             <option value="0" selected="selected">Нет</option>
                         </select> 
                         <br/><br/>
                          
-                        <p>Скидка</p>
+                        <span>Скидка</span>
                         <select name="discount">
                             <option value="1">Да</option>
                             <option value="0" selected="selected">Нет</option>
                         </select> 
                         <br/><br/>
                         
-                        <p>Booking</p>
+                        <span>Booking</span>
                         <select name="booking">
                             <option value="1">Да</option>
                             <option value="0" selected="selected">Нет</option>
                         </select> 
-                        <br/><br/>
-                        
-                        <p>Подробное описание</p>
-                        <textarea name="description"></textarea>
-                        
-                        <p>Количество спален</p>
-                        <input type="text" name="bedrooms" placeholder="" value=""> 
-                        
-                        <p>Вместимость объекта, человек</p>
-                        <input type="text" name="capacity" placeholder="" value="">                                               
-                        
-                        <p>Расстояние до а/п Тиват</p>
-                        <input type="text" name="dist_tivat" placeholder="" value=""> 
-                        
-                        <p>Расстояние до а/п Подгорица</p>
-                        <input type="text" name="dist_podg" placeholder="" value=""> 
+                        <br/><br/> -->                     
 
-                        <p>Трансфер</p>
+                        <span>Количество спален</span>
+                        <input type="text" name="bedrooms" placeholder="" value=""> 
+                        <br/>
+                        
+                        <span>Вместимость объекта, человек</span>
+                        <input type="text" name="capacity" placeholder="" value="">
+                        <br/>
+
+                        <span>Расстояние до а/п Тиват</span>
+                        <input type="text" name="dist_tivat" placeholder="" value=""> 
+                        <br/>
+                        
+                        <span>Расстояние до а/п Подгорица</span>
+                        <input type="text" name="dist_podg" placeholder="" value=""> 
+                        <br/>
+
+<!--                         <span>Трансфер</span>
                         <select name="transfer">
                             <option value="1" selected="selected">Платный</option>
                             <option value="0">Бесплатный</option>
                         </select> 
                         <br/><br/>
                         
-                        <p>Интернет</p>
+                        <span>Интернет</span>
                         <select name="internet">
                             <option value="1">Платный</option>
                             <option value="0" selected="selected">Бесплатный</option>
                         </select> 
                         <br/><br/>
                          
-                        <p>Паркинг</p>
+                        <span>Паркинг</span>
                         <select name="parking">
                             <option value="1" selected="selected">Платный</option>
                             <option value="0">Бесплатный</option>
                         </select> 
                         <br/><br/>
                         
-                        <p>Детская кроватка</p>
+                        <span>Детская кроватка</span>
                         <select name="child_bed">
                             <option value="1" selected="selected">Платная</option>
                             <option value="0">Бесплатная</option>
                         </select> 
                         <br/><br/>
                         
-                        <p>Уборка</p>
+                        <span>Уборка</span>
                         <select name="cleaning">
                             <option value="1">Платная</option>
                             <option value="0" selected="selected">Бесплатная</option>
                         </select> 
-                        <br/><br/>
+                        <br/><br/> -->
                         
-                        <p>Статус</p>
+                        <span>Статус</span>
                         <select name="status">
                             <option value="1" selected="selected">Опубликовано</option>
                             <option value="0">Черновик</option>
                         </select> 
                         <br/><br/>
-                        
-                        <p>Изображение объекта</p>
-                        <input type="file" name="images[]" placeholder="" value="" multiple>
 
+                        <span>Подробное описание</span>
+                        <textarea name="description"></textarea>
+                        <br/>
+                        
+                        <span>Изображение объекта</span>
+                        <input id="btn-pict" type="file" name="images[]" placeholder="" value="" multiple>
                         <br/>
                         
                         <?php if (isset($imgNameList)): ?>
@@ -143,9 +153,9 @@
                             <?php endforeach; ?>
                         <?php endif; ?>
                         
-                        <br/><br/>
                         
-                        <input type="submit" name="submit" class="btn btn-default" value="Сохранить">
+                        
+                        <input id="btn-save" type="submit" name="submit" class="btn btn-default" value="Сохранить">
 
                         <br/><br/>
 

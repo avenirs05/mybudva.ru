@@ -40,10 +40,6 @@
 
         $("#description_ifr").height(300);
 
-        alert('hhh');
-
-
-
     });
 </script>
 

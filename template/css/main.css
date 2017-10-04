@@ -18,6 +18,10 @@ html, body {
     padding: 0;
 }
 
+/*.btn btn-default {
+    background-color: green;
+}*/
+
 .img-wrap-mini {
     width: 150px;
     height: 100px;
@@ -1467,7 +1471,7 @@ h2.title {
 }
 
 .login-form {
-
+    font-size: 18px;
 }
 
 .signup-form {
@@ -1484,18 +1488,40 @@ h2.title {
 
 
 .login-form form input, .signup-form form input {
-    background: #ccc;
+    background-color: #f1f1f1;
     border: medium none;
-    color: #696763;
+    color: #000;
     display: block;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     height: 40px;
     margin-bottom: 10px;
     outline: medium none;
     padding-left: 10px;
     width: 100%;
+}
+
+#btn-save {
+    background-color: #339933;
+    font-size: 28px;
+    color: #fff;
+    height: 55px;
+}
+
+#btn-save:hover {
+    background-color: #E7382B;
+}
+
+.login-form form input, .signup-form form input:hover {
+    /*background-color: #23527C;*/
+}
+
+.login-form form input[type="file"] {
+/*    background-color: white;
+    color: black;
+    height: 40px;
+    font-size: 18px;*/
 }
 
 .login-form form span{

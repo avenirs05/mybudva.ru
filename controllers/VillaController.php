@@ -20,6 +20,10 @@ class VillaController
         return true;
     }
 
+
+    /**
+     * Action для страницы конкретной виллы
+     */
     public function actionSingle($nameOfVilla, $id)
     {
         // Получаем конкретную виллу (массив с данными) по ее id
