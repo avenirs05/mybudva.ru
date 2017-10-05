@@ -61,6 +61,10 @@
                         <input type="text" name="price" placeholder="" value=""> 
                         <br/>
                         
+                        <span>Вид (на море, горы и т.д.)</span>
+                        <input type="text" name="view" placeholder="" value=""> 
+                        <br/>
+
                         <span>Акция</span>
                         <select name="action">
                             <option value="1">Да</option>

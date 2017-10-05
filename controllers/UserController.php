@@ -53,6 +53,7 @@ class UserController
         return true;
     }
     
+    
     /**
      * Action для страницы "Вход на сайт"
      */

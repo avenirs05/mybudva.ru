@@ -13,46 +13,15 @@
     <link rel="shortcut icon" href="/imgs/fav.ico" type="image/png">
     <link type="text/css" rel="stylesheet" href="/css/lightgallery.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
-    <link href="/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 
     <script src="/js/jquery-3.1.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/lightgallery.min.js"></script>
     <script src="/js/lg-thumbnail.min.js"></script>
+    <script src="/js/main.js"></script>
 
-    <script>    
-        $(function () {
-            $('#carousel-main-screen').carousel();
-            $('#carousel-gallery-mob').carousel();
-            $("#lightgallery").lightGallery( { showThumbByDefault: true });
 
-            $('.btn-callback').click(function() { $('#modal-free-consult').modal('show'); });
-            $('.burger-menu').click(function() { $('#modal-menu').modal('show'); });
-
-            $('[data-toggle="tooltip"]').tooltip();
-            
-            // Выделение цветом нужной страницы
-            var location = window.location.href;  
-            $('.menu-wrapper a').each(function () {  
-                var link = $(this).attr('href');
-                if (location == link) { 
-                    $(this).addClass('change-color');                
-                }
-            }); 
-            // Конец. Выделение цветом нужной страницы 
-
-            // Прижать футер к низу
-            if ($(document).height() <= $(window).height()) {
-              $(".footer").addClass("navbar-fixed-bottom");
-            }
-            // Конец. Прижать футер к низу
-
-            $('#lightgallery img').width('82');
-            $('#lightgallery img').height('54');
-            
-
-        });
-    </script>
     <style>
         body{
           padding-right: 0 !important;     

@@ -22,6 +22,7 @@ class AdminRealtyController extends AdminBase
         require_once(ROOT . '/views/admin_realty/index.php');
         return true;
     }
+    
 
     /**
      * Action для страницы "Добавить объект"
@@ -42,6 +43,7 @@ class AdminRealtyController extends AdminBase
             $options['dist_sea'] = $_POST['dist_sea'];
             $options['price_through'] = $_POST['price_through'];
             $options['price'] = $_POST['price'];
+            $options['view'] = $_POST['view'];
             $options['action'] = $_POST['action'];
             $options['discount'] = $_POST['discount'];
             $options['booking'] = $_POST['booking'];
@@ -121,6 +123,7 @@ class AdminRealtyController extends AdminBase
             $options['dist_sea'] = $_POST['dist_sea'];
             $options['price_through'] = $_POST['price_through'];
             $options['price'] = $_POST['price'];
+            $options['view'] = $_POST['view'];
             $options['action'] = $_POST['action'];
             $options['discount'] = $_POST['discount'];
             $options['booking'] = $_POST['booking'];
@@ -192,6 +195,7 @@ class AdminRealtyController extends AdminBase
         require_once(ROOT . '/views/admin_realty/update.php');
         return true;
     }
+
 
     /**
      * Action для страницы "Удалить объект"

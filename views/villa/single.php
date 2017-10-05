@@ -18,10 +18,43 @@
 	</div>
 </div>
 <br>
+<?php //d($villa); ?>
 <div class="container-fluid visible-md-block visible-lg-block">   
     <div class="row">    	
-        <div class="col-md-12 visible-md-block visible-lg-block">    
+        <div class="col-md-6 visible-md-block visible-lg-block">    
 			<table class="table-striped table-parameters">
+				<tr>
+				  <td class="active">Площадь</td>
+				  <td class="success"><?php echo $villa['name']; ?></td>
+				</tr>
+				<tr>
+				  <td class="active">Параметр</td>
+				  <td class="success">Значение</td>
+				</tr>
+				<tr>
+				  <td class="active">Параметр</td>
+				  <td class="success">Значение</td>
+				</tr>
+				<tr>
+				  <td class="active">Параметр</td>
+				  <td class="success">Значение</td>
+				</tr>
+				<tr>
+				  <td class="active">Параметр</td>
+				  <td class="success">Значение</td>
+				</tr>
+				<tr>
+				  <td class="active">Параметр</td>
+				  <td class="success">Значение</td>
+				</tr>
+				<tr>
+				  <td class="active">Параметр</td>
+				  <td class="success">Значение</td>
+				</tr>
+				<tr>
+				  <td class="active">Параметр</td>
+				  <td class="success">Значение</td>
+				</tr>
 				<tr>
 				  <td class="active">Параметр</td>
 				  <td class="success">Значение</td>
@@ -36,9 +69,13 @@
 				</tr>
 			</table>							
 		</div>
+		<div class="col-md-6 visible-md-block visible-lg-block"> 
+			Цены
+		</div>		
 	</div>
 </div>
+<br>
 
 
 
-<!-- <?php include ROOT . '/views/layouts/footer.php'; ?> -->
+<?php include ROOT . '/views/layouts/footer.php'; ?>

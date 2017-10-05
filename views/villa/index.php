@@ -8,10 +8,14 @@
             <hr>
         </div>
     </div> 
+
+
     <?php foreach ($villas as $villaItem): ?>
+        <?php $firstImgName = Realty::getImgNameList($villaItem) ; ?>
+        
         <div class="row item-strip">        
             <div class="col-md-4">
-                <img src="imgs/narcissus_01-min540x360.jpg" alt="" class="img-responsive">
+                <img src="/upload/images/<?php echo $villaItem['name']; ?>/<?php echo $firstImgName[0]; ?>" alt="" class="img-responsive">
             </div>
             <div class="col-md-8">
                 <h3><a href="#" target="_blank"><?php echo $villaItem['name']; ?></a></h3>

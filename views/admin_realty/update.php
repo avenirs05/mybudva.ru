@@ -54,6 +54,10 @@
                         <input type="text" name="price" placeholder="" value="<?php echo $realty['price']; ?>"> 
                         <br/>
 
+                        <span>Вид (на море, горы и т.д.)</span>
+                        <input type="text" name="view" placeholder="" value="<?php echo $realty['view']; ?>"> 
+                        <br/>
+
                         <span>Акция</span>
                         <select name="action">
                             <option value="1" <?php if ($realty['action'] == 1) echo ' selected="selected"'; ?> >Есть</option>

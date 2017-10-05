@@ -34,8 +34,8 @@
                         <td><?php echo $realty['type']; ?></td>
                         <td><?php echo $realty['name']; ?></td>
                         <td><?php echo $realty['price']; ?></td>  
-                        <td><a href="/admin/realty/update/<?php echo $realty['id']; ?>" title="Редактировать" target="_blank"><i class="fa fa-pencil-square-o"></i></a></td>
-                        <td><a href="/admin/realty/delete/<?php echo $realty['id'] .'/' . $realty['name']; ?>" title="Удалить" target="_blank"><i class="fa fa-times"></i></a></td>
+                        <td><a href="/admin/realty/update/<?php echo $realty['id']; ?>" title="Редактировать" target="_blank"><i class="fa fa-pencil-square-o"></i>Edit</a></td>
+                        <td><a href="/admin/realty/delete/<?php echo $realty['id'] .'/' . $realty['name']; ?>" title="Удалить" target="_blank"><i class="fa fa-times"></i>Delete</a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>
