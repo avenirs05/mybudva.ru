@@ -54,6 +54,30 @@
                         <input type="text" name="price" placeholder="" value="<?php echo $realty['price']; ?>"> 
                         <br/>
 
+                        <span>Цена - май, €</span>
+                        <input type="text" name="price-may" placeholder="" value="<?php echo $realty['price_may']; ?>"> 
+                        <br/>
+
+                        <span>Цена - июнь, €</span>
+                        <input type="text" name="price-jun" placeholder="" value="<?php echo $realty['price_jun']; ?>"> 
+                        <br/>
+
+                        <span>Цена - июль, €</span>
+                        <input type="text" name="price-jul" placeholder="" value="<?php echo $realty['price_jul']; ?>"> 
+                        <br/>
+
+                        <span>Цена - август, €</span>
+                        <input type="text" name="price-aug" placeholder="" value="<?php echo $realty['price_aug']; ?>"> 
+                        <br/>
+
+                        <span>Цена - сентябрь, €</span>
+                        <input type="text" name="price-sep" placeholder="" value="<?php echo $realty['price_sep']; ?>"> 
+                        <br/>
+
+                        <span>Цена - октябрь - апрель, €</span>
+                        <input type="text" name="price-oct-apr" placeholder="" value="<?php echo $realty['price_oct_apr']; ?>"> 
+                        <br/>
+
                         <span>Вид (на море, горы и т.д.)</span>
                         <input type="text" name="view" placeholder="" value="<?php echo $realty['view']; ?>"> 
                         <br/>

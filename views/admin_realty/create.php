@@ -60,6 +60,30 @@
                         <span>Цена, €</span>
                         <input type="text" name="price" placeholder="" value=""> 
                         <br/>
+
+                        <span>Цена - май, €</span>
+                        <input type="text" name="price_may" placeholder="" value=""> 
+                        <br/>
+
+                        <span>Цена - июнь, €</span>
+                        <input type="text" name="price_jun" placeholder="" value=""> 
+                        <br/>
+
+                        <span>Цена - июль, €</span>
+                        <input type="text" name="price_jul" placeholder="" value=""> 
+                        <br/>
+
+                        <span>Цена - август, €</span>
+                        <input type="text" name="price_aug" placeholder="" value=""> 
+                        <br/>
+
+                        <span>Цена - сентябрь, €</span>
+                        <input type="text" name="price_sep" placeholder="" value=""> 
+                        <br/>
+
+                        <span>Цена - октябрь - апрель, €</span>
+                        <input type="text" name="price_oct_apr" placeholder="" value=""> 
+                        <br/>
                         
                         <span>Вид (на море, горы и т.д.)</span>
                         <input type="text" name="view" placeholder="" value=""> 

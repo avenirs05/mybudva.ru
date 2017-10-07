@@ -43,6 +43,14 @@ class AdminRealtyController extends AdminBase
             $options['dist_sea'] = $_POST['dist_sea'];
             $options['price_through'] = $_POST['price_through'];
             $options['price'] = $_POST['price'];
+
+            $options['price_may'] = $_POST['price_may'];
+            $options['price_jun'] = $_POST['price_jun'];
+            $options['price_jul'] = $_POST['price_jul'];
+            $options['price_aug'] = $_POST['price_aug'];
+            $options['price_sep'] = $_POST['price_sep'];
+            $options['price_oct_apr'] = $_POST['price_oct_apr'];
+
             $options['view'] = $_POST['view'];
             $options['action'] = $_POST['action'];
             $options['discount'] = $_POST['discount'];

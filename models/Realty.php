@@ -15,12 +15,14 @@ class Realty
         $db = Db::getConnection();
         // Текст запроса к БД
         $sql = 'INSERT INTO realty '
-                . '(type, name, mini_descr, area, dist_sea, price_through, price, view, '
-                . 'action, discount, booking, description, bedrooms, capacity, '
+                . '(type, name, mini_descr, area, dist_sea, price_through, price, ' 
+                . 'price_may, price_jun, price_jul, price_aug, price_sep, price_oct_apr, '
+                . 'view, action, discount, booking, description, bedrooms, capacity, '
                 . 'dist_tivat, dist_podg, transfer, internet, parking, child_bed, '
                 . 'cleaning, status) '
                 . 'VALUES '
-                . '(:type, :name, :mini_descr, :area, :dist_sea, :price_through, :price, :view, '
+                . '(:type, :name, :mini_descr, :area, :dist_sea, :price_through, :price, ' 
+                . ':price_may, :price_jun, :price_jul, :price_aug, :price_sep, :price_oct_apr, :view, '
                 . ':action, :discount, :booking, :description, :bedrooms, :capacity, '
                 . ':dist_tivat, :dist_podg, :transfer, :internet, '
                 . ':parking, :child_bed, :cleaning, :status)';
@@ -34,6 +36,14 @@ class Realty
         $result->bindParam(':dist_sea', $options['dist_sea'], PDO::PARAM_STR);
         $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_INT);
         $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
+
+        $result->bindParam(':price_may', $options['price_may'], PDO::PARAM_STR);
+        $result->bindParam(':price_jun', $options['price_jun'], PDO::PARAM_STR);
+        $result->bindParam(':price_jul', $options['price_jul'], PDO::PARAM_STR);
+        $result->bindParam(':price_aug', $options['price_aug'], PDO::PARAM_STR);
+        $result->bindParam(':price_sep', $options['price_sep'], PDO::PARAM_STR);
+        $result->bindParam(':price_oct_apr', $options['price_oct_apr'], PDO::PARAM_STR);
+
         $result->bindParam(':view', $options['view'], PDO::PARAM_STR);
         $result->bindParam(':action', $options['action'], PDO::PARAM_STR);
         $result->bindParam(':discount', $options['discount'], PDO::PARAM_INT);
