@@ -11,14 +11,16 @@
 
 
     <?php foreach ($villas as $villaItem): ?>
-        <?php $firstImgName = Realty::getImgNameList($villaItem) ; ?>
-        
+        <?php $firstImgName = Realty::getImgNameList($villaItem); ?>        
+        <?php $villaName = str_replace('_', ' ', $villaItem['name']); ?>
         <div class="row item-strip">        
             <div class="col-md-4">
-                <img src="/upload/images/<?php echo $villaItem['name']; ?>/<?php echo $firstImgName[0]; ?>" alt="" class="img-responsive">
+                <a href="/villa/single/<?php echo $villaItem['name']; ?>/<?php echo $villaItem['id']; ?>.php" target="_blank">
+                    <img src="/upload/images/<?php echo $villaItem['name']; ?>/<?php echo $firstImgName[0]; ?>" alt="" class="img-responsive">
+                </a>
             </div>
-            <div class="col-md-8">
-                <h3><a href="#" target="_blank"><?php echo $villaItem['name']; ?></a></h3>
+            <div class="col-md-8">                
+                <h3><a href="/villa/single/<?php echo $villaItem['name']; ?>/<?php echo $villaItem['id']; ?>.php" target="_blank"><?php echo $villaName; ?></a></h3>
                 <h4><?php echo $villaItem['mini_descr']; ?></h4>
                 <ul>
                     <li><span class="bold">Площадь: </span><?php echo $villaItem['area']; ?> м2</li>

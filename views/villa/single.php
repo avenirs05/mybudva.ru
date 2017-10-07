@@ -1,81 +1,85 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
-<h1 class="text-center"><?php echo $villa['name']; ?></h1><br>
+<?php $villaName = str_replace('_', ' ', $villa['name']); ?>
+<h1 class="text-center"><?php echo $villaName; ?></h1><br>
 
 <div class="container-fluid visible-md-block visible-lg-block">   
-    <div class="row">    	
-        <div class="col-md-6 visible-md-block visible-lg-block">    
+    <div class="row"> 	
+		<div class="lightgallery-wrap">
 			<div id="lightgallery">
 				<?php foreach ($imgNameList as $img): ?>
-			    	<a href="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>">        	    <img class="img-responsive" src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>" alt="">
+			    	<a href="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>">        	    <img width="82" height="54" class="img-responsive" src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>" alt="">
 			    	</a>    	
 				<?php endforeach; ?>
-			</div>	
-		</div>
-        <div class="col-md-6 big-img-realty visible-md-block visible-lg-block">    
-			<img class="img-responsive" src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $imgNameList[0]; ?>" alt="">
+			</div>
+			<div class="big-img-realty visible-md-block visible-lg-block">    
+				<img class="img-responsive" src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $imgNameList[0]; ?>" alt="">
+			</div>
 		</div>
 	</div>
 </div>
 <br>
 <?php //d($villa); ?>
+
 <div class="container-fluid visible-md-block visible-lg-block">   
-    <div class="row">    	
-        <div class="col-md-6 visible-md-block visible-lg-block">    
-			<table class="table-striped table-parameters">
+    <div class="row"> 	
+		<div class="params-val-wrap">
+			<div id="param-of-realty">
+				<div class="param-odd"><strong>Площадь</strong></div>
+				<div><strong>Вид</strong></div>
+				<div class="param-odd"><strong>Количество спален</strong></div>
+				<div><strong>Вместимость (человек)</strong></div>
+				<div class="param-odd"><strong>Расстояние до моря</strong></div>
+				<div><strong>До аэропорта "Тиват"</strong></div>
+				<div class="param-odd"><strong>До аэропорта "Подгорица"</strong></div>
+				<div><strong>Трансфер</strong></div>
+				<div class="param-odd"><strong>Интернет</strong></div>
+				<div><strong>Паркинг</strong></div>
+				<div class="param-odd"><strong>Детская кроватка</strong></div>
+				<div><strong>Уборка</strong></div><br>
+				<div><strong>Описание</strong></div>				
+			</div>
+			<div id="val-of-realty" class="big-img-realty visible-md-block visible-lg-block">  
+				<div class="param-odd"><?php echo $villa['area']; ?> м2</div>
+				<div><?php echo $villa['view']; ?></div>
+				<div class="param-odd"><?php echo $villa['bedrooms']; ?></div>
+				<div><?php echo $villa['capacity']; ?> человек</div>
+				<div class="param-odd"><?php echo $villa['dist_sea']; ?> м</div>
+				<div><?php echo $villa['dist_tivat']; ?> км</div>
+				<div class="param-odd"><?php echo $villa['dist_podg']; ?> км</div>
+				<div>платный</div>
+				<div class="param-odd">wi-fi</div>
+				<div>бесплатный</div>
+				<div class="param-odd">под запрос, 5€ в сутки</div>
+				<div>1 раз в неделю со сменой постельного белья и полотенец</div><br>	
+				<div id="fake-dot">.</div>			
+			</div>			
+
+			<div id="description"><?php echo $villa['description']; ?></div><br>		
+				
+			<table class="table table-bordered table-prices">
 				<tr>
-				  <td class="active">Площадь</td>
-				  <td class="success"><?php echo $villa['name']; ?></td>
+					<th>май</th>
+					<th>июнь</th>
+					<th>июль</th>
+					<th>август</th>
+					<th>сентябрь</th>
+					<th>октябрь-апрель</th>
 				</tr>
 				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
+					<td>100</td>
+					<td>200</td>
+					<td>200</td>
+					<td>200</td>
+					<td>200</td>
+					<td>200</td>
 				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-				<tr>
-				  <td class="active">Параметр</td>
-				  <td class="success">Значение</td>
-				</tr>
-			</table>							
+			</table>			
 		</div>
-		<div class="col-md-6 visible-md-block visible-lg-block"> 
-			Цены
-		</div>		
 	</div>
+
 </div>
+
 <br>
-
-
 
 <?php include ROOT . '/views/layouts/footer.php'; ?>

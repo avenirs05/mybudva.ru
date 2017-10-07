@@ -1,0 +1,810 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"un",
+				"unlink"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"getV",
+				"getVillaById"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"visib",
+				"visible-xs-block"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"category",
+				"category-name"
+			],
+			[
+				"vi",
+				"visible-lg-block"
+			],
+			[
+				"v",
+				"visible-md-block"
+			],
+			[
+				"vis",
+				"visible-lg-block"
+			],
+			[
+				"hidden",
+				"hidden-xs"
+			],
+			[
+				"main",
+				"main-screen-mob"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"req",
+				"require_once"
+			],
+			[
+				"flat-plan-cut",
+				"flat-plan-cut-turq2"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"sa",
+				"Sans"
+			],
+			[
+				"gallery",
+				"gallery-mob"
+			],
+			[
+				"visible",
+				"visible-md-block"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"visi",
+				"visible-sm-block"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"price-",
+				"price-page-h4"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"footer",
+				"footer-wrapper"
+			],
+			[
+				"for",
+				"for-whom"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"div",
+				"div-from-customer"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"c",
+				"change"
+			],
+			[
+				"childre",
+				"children"
+			],
+			[
+				"a",
+				"action\tAttr"
+			],
+			[
+				"not",
+				"not-know"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"szv",
+				"szv-quest-yes"
+			],
+			[
+				"btn-n",
+				"btn-next-tax-system"
+			],
+			[
+				"sho",
+				"show"
+			],
+			[
+				"one-",
+				"one-face-yes"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"qrt",
+				"qrt-4-2016"
+			],
+			[
+				"wor",
+				"workers-cnt-4-2016"
+			],
+			[
+				"buh",
+				"buh-rep-stat-4-2016"
+			],
+			[
+				"decl-",
+				"decl-usn-4-2016"
+			],
+			[
+				"base",
+				"base-inc"
+			],
+			[
+				"in",
+				"inputs"
+			],
+			[
+				"szv-quest",
+				"szv-quest-no"
+			],
+			[
+				"form",
+				"form-tax-system"
+			],
+			[
+				"h",
+				"hide"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"div-",
+				"div-will-send"
+			],
+			[
+				"qrt-1-201",
+				"qrt-1-2017"
+			],
+			[
+				"choice",
+				"choice-quarters"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"span",
+				"span-we-will-send-2017"
+			],
+			[
+				"sp",
+				"span-we-will-send-2017"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"show",
+				"showAndHideUK"
+			],
+			[
+				"peri",
+				"periods-will-send"
+			],
+			[
+				"count",
+				"count-ins"
+			],
+			[
+				"another",
+				"another-periods"
+			],
+			[
+				"co",
+				"count-fss"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"print",
+				"print_r"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Si",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/layouts/header_admin.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/js/admin-main.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/layouts/header.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/js/main.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/css/lightgallery.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/villa/single.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/css/style.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/AdminRealtyController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/models/Realty.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/config/routes.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/villa/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/VillaController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/models/Villa.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/site/contacts.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/css/admin.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/UserController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/site/index.php",
+		"/C/Users/lenovo_note/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/CabinetController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/layouts/footer_admin.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/layouts/footer.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/site/about.php",
+		"/C/Users/lenovo_note/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/create.php",
+		"/C/Users/lenovo_note/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/update.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/progs/_Office/Sublime_text/Data/Packages/Theme - Default/Default.sublime-theme",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/template/js/main.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/AdminController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/AdminOrderController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/SiteController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/ApartmentController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/js/lightgallery.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/AdminCategoryController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/components/Router.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/style.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/models/User.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/header.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/header.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/style.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/footer.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/template/css/main.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/header.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/template/css/prettyPhoto.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/feedback/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/product/view.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/page-services.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-config.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/page-thank_you.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/page-our_pride.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/page.php",
+		"/C/Users/lenovo_note/Desktop/numbers",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/veter61.loc/footer.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/veter61.loc/header.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/veter61.loc/gallery.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/veter61.loc/style.css",
+		"/C/Users/lenovo_note/Desktop/text.html",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company-js/szv.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company-js/will-send.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/functions-general.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company-js/choice-tax.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/functions-company.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/person.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/functions.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/person-js/choice-tax.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/person-js/will-send.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company-js/tranz.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company-js/tax-base.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company-js/one-face.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/company-js/clear.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/functions-person.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/events-company.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/events-general.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/what-when-send.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/nulevka.loc/events-person.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/draft/table-price.html",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/draft/table-cut.html",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/sidebar-services.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/style.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/lalin.local/wp-content/themes/lalin/page-price.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/draft/загрузка нескольких файлов.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/header-viber.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/cab.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/taxi.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/components/AdminBase.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/style.css",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/config/db_params.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/myshop.local/js/main.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/cap.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/footer.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/handler-free.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/events-general.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_category/update.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_category/create.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybuh.loc/privacy-policy.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/oc-test.loc/config.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/oc-test.loc/.htaccess",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/oc-test.loc/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/oc-test.loc/.htaccess.txt",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/oc-test.loc/admin/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/delete.php",
+		"/C/Users/lenovo_note/Desktop/sql-exmp",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.local/wp-config.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/ProductController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/FeedbackController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/VillasController.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/villas/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/apartments/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/.htaccess",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/catalog/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local.copy/index.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/apartments.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/villa-single.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/villas.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/apartment-single.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/head-scripts.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/contacts.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/header.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/functions.php",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/events-general.js",
+		"/C/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/feedback.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 254.0,
+		"where_history":
+		[
+			"C:\\Users\\lenovo_note\\Dropbox\\OpenServer\\domains\\mybudva.ru.local",
+			"C:\\Users\\lenovo_note\\Dropbox\\OpenServer\\domains\\nulevka.loc",
+			"C:\\Users\\lenovo_note\\Dropbox\\OpenServer\\domains\\mybudva.ru.local",
+			"C:\\Users\\lenovo_note\\Dropbox\\OpenServer\\domains\\veter61.loc",
+			"C:\\Users\\lenovo_note\\Dropbox\\OpenServer\\domains\\lalin.local",
+			"C:\\Users\\lenovo_note\\Dropbox\\OpenServer\\domains\\nulevka.loc",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"logo-wrapper",
+			"table-para",
+			"view",
+			"option",
+			"messenger-img-mob",
+			"call",
+			"391",
+			"btn btn-default",
+			"input",
+			"login-form",
+			"hhh",
+			"lightg",
+			"lig",
+			"gallery",
+			"lightgallery",
+			"7 9",
+			" 7 9",
+			"lightg",
+			"light",
+			"LIGHT",
+			"textarea",
+			"rows",
+			".month",
+			"сзв-ь",
+			"Мы за Вас подготовим и сдадим:",
+			"final-szv-jan-2017",
+			"2-14",
+			"прессот",
+			"массаж",
+			"вес",
+			"снижение",
+			"косметиический ",
+			"биореви",
+			"холод",
+			"криотер",
+			"неодим",
+			"IPL",
+			"лазерное лечение",
+			"биоревитализация",
+			"шлифовка",
+			"ботокс",
+			"price table",
+			"price-page table tr td:first-child",
+			"imgNames",
+			"deleteI",
+			"messeng",
+			"messenger-img-mob",
+			"glyph",
+			"url",
+			"btn-connect-taxi",
+			"100vh",
+			"main-screen-taxi",
+			"btn-our-exp",
+			"btn-connect",
+			"main-screen h1",
+			".8",
+			"btn-free-consult",
+			"header",
+			"opacity",
+			"header button",
+			"close",
+			"mini",
+			"img-mini",
+			"main-screen h1",
+			"main-screen-taxi h1",
+			"main-screen-taxi",
+			"header h1",
+			"main-screen",
+			"999",
+			"Product",
+			"product",
+			"Product",
+			"hot-offers",
+			"gallery",
+			"feedback-item-wrap",
+			"footer",
+			"btn-callback",
+			"allow",
+			"gallery-design-wrap",
+			"gallery-design",
+			"design-text",
+			"flat-plan",
+			"flats",
+			"roof",
+			"img-cut-wrap",
+			"img-cut",
+			"flats",
+			"plan-3d-wrap-mob",
+			"roof",
+			"img-cut-wrap",
+			"glyph",
+			"footer-wrapper",
+			"footer",
+			".item-menu",
+			"logo-wrapper",
+			"navbar-def",
+			"sold",
+			".to-fixed",
+			"div[aria-describedby=\"dialog-menu-mob\"] #dialog-menu-mob",
+			"div[aria-describedby=dialog-menu-mob] button[type=button]",
+			"div[",
+			"contacts",
+			"#form-bottom",
+			"320",
+			"form-bottom",
+			"характ",
+			"характе",
+			"есть дом",
+			"right-page",
+			"inq",
+			"ipl",
+			"right-img",
+			"first-img",
+			"пилинг",
+			"массаж",
+			"left-img-page",
+			"left-img",
+			"left-",
+			"left",
+			"иглореф",
+			"head-category-service-wrap",
+			"category-content",
+			"category-wrap-content",
+			"first-img-page",
+			"staff",
+			"аппар",
+			"косметич",
+			"эстетич"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"+7 9",
+			"     +7 9",
+			"Realty",
+			"realty",
+			"Realty",
+			"rejuve-rehabilitation",
+			"rejuve-no-rehabilitation",
+			"rejuve-rehabilitation",
+			"rehabilitation",
+			"Клиника",
+			".first-img-page",
+			"color",
+			"'Open Sans', sans-serif;",
+			"Цена:",
+			"floor-3",
+			"floor-2",
+			"490",
+			"imgs",
+			"carousel-main-screen",
+			"ИНН",
+			"Стоимость заказа составляет",
+			"E-mail",
+			"ИНН",
+			"#btn-free-consult",
+			".btn-free-consult",
+			"",
+			"choice-quarters"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Chrome.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

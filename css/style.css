@@ -14,6 +14,10 @@ ul, span {
 	padding: 0;
 }
 
+h1 {
+	margin-top: 30px;
+}
+
 li {
 	margin-left: 15px;
 }
@@ -30,6 +34,25 @@ a {
 	color: #8B3330;
 }
 
+#fake-dot {
+	color: #fff;
+}
+
+.table-prices {
+	margin-left: 7px;
+	font-size: 14px;
+}
+
+.table-prices th, 
+.table-prices td {
+	text-align: center;
+}
+
+#description {
+	padding-left: 7px;
+	font-size: 14px;
+}
+
 .through {
 	text-decoration: line-through;
 }
@@ -41,12 +64,6 @@ a {
 .border {
 	border: 1px solid red;
 }
-
-/*Lightgallery*/
-
-/*Lightgallery*/
-
-
 
 .img-wrap-mini {
 	width: 150px;
@@ -349,9 +366,16 @@ a {
 	padding-top: 15px;
 }
 
-/*LightGallery*/
-#lightgallery {
-	margin-right: -10px; 
+#lightgallery, #param-of-realty {
+	width: 332px;
+	float: left;
+	margin-right: 2px;
+}
+
+.lightgallery-wrap, .params-val-wrap {
+	margin-left: auto;
+	margin-right: auto;
+	width: 886px;
 }
 
 #lightgallery a {
@@ -362,6 +386,24 @@ a {
 	border: 1px solid white;
 }
 
+.param-odd {
+	background-color: #FFFFCC;
+}
+
+#param-of-realty,
+#val-of-realty {
+	padding-left: 3px;
+	font-size: 16px;
+}
+
+
+#param-of-realty > div,
+#val-of-realty > div {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
 .img-layout {
 	width: 82px;
 	height: 54px;
@@ -370,8 +412,19 @@ a {
 }
 
 .big-img-realty {
-	margin-left: -10px;
+	float: left;
+	width: 550px;
+	margin-left: 2px;
 }
+
+#val-of-realty {
+	float: left;
+	font-size: 16px;
+	margin-left: -7px;
+	width: 557px;
+}
+
+
 
 .table-parameters {
 	width: 100%;
@@ -391,8 +444,6 @@ a {
 }
 
 
-
-/*LightGallery*/
 
 
 @media screen and (min-device-width: 320px) {
