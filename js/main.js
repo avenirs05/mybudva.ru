@@ -2,11 +2,11 @@ $(function () {
 
     $('#carousel-main-screen').carousel();
     $('#carousel-gallery-mob').carousel();
+    $('.burger-menu').click(function() { $('#modal-menu').modal('show'); });
+
     $("#lightgallery").lightGallery( { showThumbByDefault: true } );
 
-    $('.btn-callback').click(function() { $('#modal-free-consult').modal('show'); });
-    $('.burger-menu').click(function() { $('#modal-menu').modal('show'); });
-    
+    // $('.btn-callback').click(function() { $('#modal-free-consult').modal('show'); });  
    
     // Выделение цветом нужной страницы
     var location = window.location.href;  
@@ -19,9 +19,11 @@ $(function () {
 
 
     // Прижать футер к низу
-    if ($(document).height() <= $(window).height()) {
-      $(".footer").addClass("navbar-fixed-bottom");
-    }
+    // if ($(document).height() <= $(window).height()) {
+    //   $(".footer").addClass("navbar-fixed-bottom");
+    // }
+
+
 
 
     // Уменьшение изображения в галерее

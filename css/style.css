@@ -18,6 +18,78 @@ h1 {
 	margin-top: 30px;
 }
 
+.h1-mob {
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+/*.col-xs-8 .realties-list-mob {
+	padding-left: 0;
+}*/
+
+.single-realty-mob .col-xs-8 {
+	padding-left: 0;
+}
+
+.single-realty-mob li, h3 {
+	font-size: 16px;
+}
+
+.single-realty-mob .item-strip h3 {
+	margin-top: -3px;
+}
+
+.single-realty-mob .price-and-btn {
+	top: -9px;
+}
+
+.single-realty-mob #rices-mob span {
+	font-size: 20px;
+}
+
+.single-realty-mob .item-strip button {
+	padding: 2px 5px;
+	font-size: 14px;
+	/*margin-top: 30px;*/
+}
+
+.single-realty-mob li {
+	list-style-type: none;
+}
+
+.single-realty-mob ul {
+	margin-left: -15px;
+}
+
+.single-realty-mob .item-strip {
+	/*margin-top: 30px;*/
+}
+
+.prices-mob {
+	position: static;
+}
+
+.single-realty-mob a {
+
+}
+
+.single-realty-mob button {
+	padding: 5px 10px;
+	font-size: 20px;
+	border-radius: 3px;
+	background-color: rgb(51, 153, 51);
+	color: rgb(255, 255, 255);
+	border: medium none;
+	width: 100%;
+	letter-spacing: 1px;
+	margin-top: 0px;
+}
+
+#price-through-mob,
+#price-mob {
+	font-size: 20px;
+}
+
 li {
 	margin-left: 15px;
 }
@@ -166,7 +238,7 @@ a {
 }
 
 .burger-menu {
-	background-image: url("imgs/burger-menu.png");
+	background-image: url("/imgs/burger-menu.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 42px;
@@ -490,6 +562,10 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.whatsapp-icon {
+		height: 15px;
+		margin-bottom: 4px;
+	}
 }
 
 @media screen and (min-device-width: 768px) {
@@ -504,6 +580,14 @@ a {
 		font-family: 'OpenSansCondensedLight', sans-serif;
 		padding-top: 7px;
 		font-weight: 700;
+	}
+	.whatsapp-icon {
+		height: 19px;
+		margin-bottom: 8px;
+	}
+	.header .glyphicon-earphone {
+	    font-size: 17px;
+/*	    margin-right: -5px;*/
 	}
 }
 
@@ -543,6 +627,10 @@ a {
 	.logo-wrapper {
 		width: 77px;
 		height: 41px;
+	}
+	.whatsapp-icon {
+		height: 22px;
+		margin-bottom: 10px;
 	}
 }
 

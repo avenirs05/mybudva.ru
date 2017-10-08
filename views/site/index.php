@@ -35,7 +35,7 @@
     </a>
 </div>
 
-<div class="container-fluid hot-offers visible-md-block visible-lg-block">
+<!-- <div class="container-fluid hot-offers visible-md-block visible-lg-block">
    
     <div class="row">
         <div class="col-md-12">
@@ -102,6 +102,6 @@
     </div> 
     <hr>
 
-</div>
+</div> -->
 
 <?php include ROOT . '/views/layouts/footer.php'; ?>

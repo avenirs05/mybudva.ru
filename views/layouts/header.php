@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="format-detection" content="telephone=no">
     
-    <title>Недвижимость</title>
+    <title>Аренда вилл и апартаментов в Черногории</title>
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="shortcut icon" href="/imgs/fav.ico" type="image/png">
@@ -36,7 +36,7 @@
 
 </head>
 <body>
-
+<?php include ROOT . '/views/layouts/modals.php'; ?>
 
 <nav class="navbar navbar-default navbar-fixed-top visible-md-block visible-lg-block">
     <div class="container-fluid header">
@@ -66,6 +66,7 @@
             <div>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
                 <span class="phone-digits">+382 67 25 86 66</span> 
+                <img class="whatsapp-icon" src="imgs/viber_whatsapp_icon.png" alt=""> 
             </div>
         </div>
     </div>

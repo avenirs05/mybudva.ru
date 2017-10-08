@@ -2,13 +2,13 @@
 
         <div class="row footer-wrapper">
             <div class="col-md-3">
-                <div><a href="villas.php" target="_blank">Виллы</a></div>
-                <div><a href="apartments.php" target="_blank">Апартаменты</a></div>
-                <div><a href="feedback.php" target="_blank">Отзывы</a></div>
+                <div><a href="/villa" target="_blank">Виллы</a></div>
+                <div><a href="/apartment" target="_blank">Апартаменты</a></div>
+                <div><a href="/feedback" target="_blank">Отзывы</a></div>
                 <div><a href="#"></a></div>
             </div>
             <div class="col-md-3">
-                <div><a href="contacts.php" target="_blank">Контакты</a></div>
+                <div><a href="/contacts" target="_blank">Контакты</a></div>
                 <div>+382 67 25 86 66</div>
                 <div>arenda@mybudva.ru</div>
             </div>
