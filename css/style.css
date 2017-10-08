@@ -31,7 +31,8 @@ h1 {
 	padding-left: 0;
 }
 
-.single-realty-mob li, h3 {
+.single-realty-mob li, 
+.single-realty-mob h3 {
 	font-size: 16px;
 }
 
@@ -50,7 +51,6 @@ h1 {
 .single-realty-mob .item-strip button {
 	padding: 2px 5px;
 	font-size: 14px;
-	/*margin-top: 30px;*/
 }
 
 .single-realty-mob li {
@@ -59,10 +59,6 @@ h1 {
 
 .single-realty-mob ul {
 	margin-left: -15px;
-}
-
-.single-realty-mob .item-strip {
-	/*margin-top: 30px;*/
 }
 
 .prices-mob {
