@@ -56,7 +56,7 @@
 			</div>			
 
 			<div id="description"><?php echo $villa['description']; ?></div><br>		
-				
+
 			<table class="table table-bordered table-prices">
 				<tr>
 					<th>май</th>
@@ -67,14 +67,15 @@
 					<th>октябрь-апрель</th>
 				</tr>
 				<tr>
-					<td>100</td>
-					<td>200</td>
-					<td>200</td>
-					<td>200</td>
-					<td>200</td>
-					<td>200</td>
+					<td><?php echo $villa['price_may']; ?> €</td>
+					<td><?php echo $villa['price_jun']; ?> €</td>
+					<td><?php echo $villa['price_jul']; ?> €</td>
+					<td><?php echo $villa['price_aug']; ?> €</td>
+					<td><?php echo $villa['price_sep']; ?> €</td>
+					<td><?php echo $villa['price_oct_apr']; ?> €</td>
 				</tr>
-			</table>			
+			</table>	
+
 		</div>
 	</div>
 

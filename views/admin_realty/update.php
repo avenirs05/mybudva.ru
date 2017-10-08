@@ -55,27 +55,27 @@
                         <br/>
 
                         <span>Цена - май, €</span>
-                        <input type="text" name="price-may" placeholder="" value="<?php echo $realty['price_may']; ?>"> 
+                        <input type="text" name="price_may" placeholder="" value="<?php echo $realty['price_may']; ?>"> 
                         <br/>
 
                         <span>Цена - июнь, €</span>
-                        <input type="text" name="price-jun" placeholder="" value="<?php echo $realty['price_jun']; ?>"> 
+                        <input type="text" name="price_jun" placeholder="" value="<?php echo $realty['price_jun']; ?>"> 
                         <br/>
 
                         <span>Цена - июль, €</span>
-                        <input type="text" name="price-jul" placeholder="" value="<?php echo $realty['price_jul']; ?>"> 
+                        <input type="text" name="price_jul" placeholder="" value="<?php echo $realty['price_jul']; ?>"> 
                         <br/>
 
                         <span>Цена - август, €</span>
-                        <input type="text" name="price-aug" placeholder="" value="<?php echo $realty['price_aug']; ?>"> 
+                        <input type="text" name="price_aug" placeholder="" value="<?php echo $realty['price_aug']; ?>"> 
                         <br/>
 
                         <span>Цена - сентябрь, €</span>
-                        <input type="text" name="price-sep" placeholder="" value="<?php echo $realty['price_sep']; ?>"> 
+                        <input type="text" name="price_sep" placeholder="" value="<?php echo $realty['price_sep']; ?>"> 
                         <br/>
 
                         <span>Цена - октябрь - апрель, €</span>
-                        <input type="text" name="price-oct-apr" placeholder="" value="<?php echo $realty['price_oct_apr']; ?>"> 
+                        <input type="text" name="price_oct_apr" placeholder="" value="<?php echo $realty['price_oct_apr']; ?>"> 
                         <br/>
 
                         <span>Вид (на море, горы и т.д.)</span>

@@ -88,6 +88,12 @@ class Realty
                     dist_sea = :dist_sea, 
                     price_through = :price_through, 
                     price = :price,  
+                    price_may = :price_may,
+                    price_jun = :price_jun,
+                    price_jul = :price_jul,
+                    price_aug = :price_aug,
+                    price_sep = :price_sep,
+                    price_oct_apr = :price_oct_apr,
                     view = :view, 
                     action = :action, 
                     discount = :discount, 
@@ -112,8 +118,16 @@ class Realty
         $result->bindParam(':mini_descr', $options['mini_descr'], PDO::PARAM_STR);
         $result->bindParam(':area', $options['area'], PDO::PARAM_STR);
         $result->bindParam(':dist_sea', $options['dist_sea'], PDO::PARAM_STR);
+
         $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_INT);
         $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
+        $result->bindParam(':price_may', $options['price_may'], PDO::PARAM_STR);
+        $result->bindParam(':price_jun', $options['price_jun'], PDO::PARAM_STR);
+        $result->bindParam(':price_jul', $options['price_jul'], PDO::PARAM_STR);
+        $result->bindParam(':price_aug', $options['price_aug'], PDO::PARAM_STR);
+        $result->bindParam(':price_sep', $options['price_sep'], PDO::PARAM_STR);
+        $result->bindParam(':price_oct_apr', $options['price_oct_apr'], PDO::PARAM_STR);        
+
         $result->bindParam(':view', $options['view'], PDO::PARAM_STR);
         $result->bindParam(':action', $options['action'], PDO::PARAM_STR);
         $result->bindParam(':discount', $options['discount'], PDO::PARAM_INT);
@@ -139,6 +153,7 @@ class Realty
         return 0;
     }
     
+
     /**
     * Удаляет объект с указанным id
     * @param integer $id <p>id объекта</p>
