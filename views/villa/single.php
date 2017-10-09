@@ -1,7 +1,9 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
 <?php $villaName = str_replace('_', ' ', $villa['name']); ?>
-<h1 class="text-center"><?php echo $villaName; ?></h1><br>
+
+<h1 class="text-center visible-md-block visible-lg-block"><?php echo $villaName; ?></h1><br>
+<h1 class="text-center h1-mob-single visible-xs-block visible-sm-block"><?php echo $villaName; ?></h1>
 
 <div class="container-fluid visible-md-block visible-lg-block">   
     <div class="row"> 	
@@ -19,6 +21,43 @@
 	</div>
 </div>
 <br>
+
+<div id="carousel-main-screen" class="carousel slide visible-xs-block visible-sm-block" data-ride="carousel">  
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+		<?php for ($i = 0; $i < count($imgNameList); $i++): ?>
+			<?php if ($i == 0): ?>
+				<li data-target="#carousel-main-screen" data-slide-to="0" class="active"></li>
+			<?php else: ?>				
+				<li data-target="#carousel-main-screen" data-slide-to="<?php echo $i; ?>"></li>
+			<?php endif; ?>	   				
+		<?php endfor; ?>
+	</ol>
+  <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+		<?php for ($i = 0; $i < count($imgNameList); $i++): ?>
+			<?php if ($i == 0): ?>
+				<div class="item active">
+					<img src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $imgNameList[$i]; ?>" alt="">
+			<?php else: ?>
+				<div class="item">
+					<img src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $imgNameList[$i]; ?>" alt="">
+			<?php endif; ?>	
+   				</div>
+		<?php endfor; ?>   	
+    </div>
+  <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-main-screen" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-main-screen" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
 <?php //d($villa); ?>
 
 <div class="container-fluid visible-md-block visible-lg-block">   
@@ -83,4 +122,4 @@
 
 <br>
 
-<?php include ROOT . '/views/layouts/footer.php'; ?>
+<?php //include ROOT . '/views/layouts/footer.php'; ?>

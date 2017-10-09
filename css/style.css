@@ -23,6 +23,25 @@ h1 {
 	margin-top: 20px;
 }
 
+.h1-mob-single {
+	font-size: 24px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.h2-mob-feedback {
+	font-size: 24px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.h3-mob-feedback {
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
 /*.col-xs-8 .realties-list-mob {
 	padding-left: 0;
 }*/
