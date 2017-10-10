@@ -90,7 +90,8 @@
 				<div class="param-even">1 раз в неделю со сменой постельного белья и полотенец</div><br>	
 				<div id="fake-dot">.</div>			
 			</div>
-			<div id="description"><?php echo $villa['description']; ?></div><br>
+			<div id="description"><?php echo $villa['description']; ?></div>
+			<h3 id="h3-price-per-day" class="text-center">Цена в сутки <span class="red">(без учета спецпредложений и скидок)</span></h3>
 			<table class="table table-bordered table-prices">
 				<tr>
 					<th>май</th>
@@ -168,7 +169,8 @@
 				</tr>			
 			</table>
 			<br>
-			<div id="description"><?php echo $villa['description']; ?></div><br>
+			<div id="description"><?php echo $villa['description']; ?></div>	
+			<h3 class="text-center">Цена в сутки <span class="red">(без учета спецпредложений и скидок)</span></h3>		
 			<table class="table table-prices-mob">
 				<tr class="param-even">
 					<th>май</th>
@@ -182,9 +184,6 @@
 				</tr>
 			</table>
 			<table class="table table-prices-mob">
-<!-- 				<tr>
-					<td colspan="3"></td>
-				</tr> -->
 				<tr class="param-even">
 					<th>август</th>
 					<th>сентябрь</th>
