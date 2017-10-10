@@ -10,7 +10,7 @@ $(function () {
    
     // Выделение цветом нужной страницы
     var location = window.location.href;  
-    $('.menu-wrapper a').each(function () {  
+    $('.menu-wrapper a').each(function() {  
         var link = $(this).attr('href');
         if (location == link) { 
             $(this).addClass('change-color');                
@@ -18,10 +18,10 @@ $(function () {
     }); 
 
 
-    // Прижать футер к низу
-    // if ($(document).height() <= $(window).height()) {
-    //   $(".footer").addClass("navbar-fixed-bottom");
-    // }
+    //Прижать футер к низу
+    if ($(document).height() <= $(window).height()) {
+      $(".footer").addClass("navbar-fixed-bottom");
+    }
 
 
 

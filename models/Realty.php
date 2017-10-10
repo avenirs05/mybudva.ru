@@ -34,7 +34,7 @@ class Realty
         $result->bindParam(':mini_descr', $options['mini_descr'], PDO::PARAM_STR);
         $result->bindParam(':area', $options['area'], PDO::PARAM_STR);
         $result->bindParam(':dist_sea', $options['dist_sea'], PDO::PARAM_STR);
-        $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_INT);
+        $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_STR);
         $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
 
         $result->bindParam(':price_may', $options['price_may'], PDO::PARAM_STR);
@@ -119,7 +119,7 @@ class Realty
         $result->bindParam(':area', $options['area'], PDO::PARAM_STR);
         $result->bindParam(':dist_sea', $options['dist_sea'], PDO::PARAM_STR);
 
-        $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_INT);
+        $result->bindParam(':price_through', $options['price_through'], PDO::PARAM_STR);
         $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
         $result->bindParam(':price_may', $options['price_may'], PDO::PARAM_STR);
         $result->bindParam(':price_jun', $options['price_jun'], PDO::PARAM_STR);

@@ -14,6 +14,11 @@ ul, span {
 	padding: 0;
 }
 
+.h1-feedback {
+	margin-bottom: 30px;
+}
+
+
 h1 {
 	margin-top: 30px;
 }
@@ -29,9 +34,14 @@ h1 {
 	margin-bottom: 0px;
 }
 
+.h1-contacts-mob {
+	font-size: 24px;
+	margin-top: 30px;
+}
+
 .h2-mob-feedback {
 	font-size: 24px;
-	margin-top: 0px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 }
 
@@ -41,10 +51,6 @@ h1 {
 	margin-bottom: 0px;
 	font-weight: bold;
 }
-
-/*.col-xs-8 .realties-list-mob {
-	padding-left: 0;
-}*/
 
 .single-realty-mob .col-xs-8 {
 	padding-left: 0;
@@ -135,9 +141,14 @@ a {
 	text-align: center;
 }
 
+.table-prices-mob th,
+.table-prices-mob td {
+	text-align: center;
+}
+
 #description {
 	padding-left: 7px;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .through {
@@ -230,7 +241,7 @@ a {
 	text-align: justify;
 }
 
-.feedback-item-wrap h2{
+.feedback-item-wrap h2 {
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -465,6 +476,12 @@ a {
 	width: 886px;
 }
 
+.params-val-wrap-mob {
+	margin-left: auto;
+	margin-right: auto;
+	width: 290px;
+}
+
 #lightgallery a {
 	display: block;	
 	width: 82px;
@@ -477,12 +494,28 @@ a {
 	background-color: #FFFFCC;
 }
 
+.param-even {
+	background-color: #FFFFCC;
+}
+
+.table-param-mob {
+	width: 100%;
+	font-size: 16px;
+}
+
+.table-param-mob th,
+.table-param-mob td {
+	width: 50%;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 #param-of-realty,
 #val-of-realty {
 	padding-left: 3px;
 	font-size: 16px;
 }
-
 
 #param-of-realty > div,
 #val-of-realty > div {
@@ -511,26 +544,15 @@ a {
 	width: 557px;
 }
 
-
-
 .table-parameters {
 	width: 100%;
 }
 
-.table-parameters tr td:nth-child(odd) {
-	/*text-align: right;*/
-}
 
 .table-parameters tr td:nth-child(odd) {
 	padding-right: 0px;
 	font-weight: bold;
 }
-
-.table-parameters tr td:nth-child(even) {
-	/*padding-left: 10px;*/
-}
-
-
 
 
 @media screen and (min-device-width: 320px) {
@@ -580,6 +602,13 @@ a {
 	.whatsapp-icon {
 		height: 15px;
 		margin-bottom: 4px;
+	}
+	.feedback-item-wrap {
+	    padding: 0px 0px;
+	    text-align: left;
+	}
+	.h1-feedback {
+		font-size: 24px;
 	}
 }
 
@@ -646,6 +675,14 @@ a {
 	.whatsapp-icon {
 		height: 22px;
 		margin-bottom: 10px;
+	}
+	.feedback-item-wrap {
+		padding: 0px 200px;
+		font-size: 16px;
+		text-align: justify;
+	}
+	.h1-feedback {
+		font-size: 36px;
 	}
 }
 
