@@ -42,17 +42,18 @@
     <div class="container-fluid header">
         <a href="index.php" class="logo-wrapper"></a>
         <div class="menu-wrapper">
-            <a href="/index.php" target="_blank">Главная</a>
-            <a href="/villa" target="_blank">Виллы</a>
-            <a href="/apartment" target="_blank">Апартаменты</a>
-            <a href="/feedback" target="_blank">Отзывы</a>
-            <a href="/contacts" target="_blank">Контакты</a>          
+            <a id="main-link" href="/index.php" target="_blank">Главная</a>
+            <a id="villa-link" href="/villa" target="_blank">Виллы</a>
+            <a id="apart-link" href="/apartment" target="_blank">Апартаменты</a>
+            <a id="feedback-link" href="/feedback" target="_blank">Отзывы</a>
+            <a id="contacts-link" href="/contacts" target="_blank">Контакты</a>          
         </div>
+
         <div class="phones-wrapper text-right">
             <div>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
                 <span class="phone-digits digits">+382 67 25 86 66</span>     
-                <img class="whatsapp-icon" src="/imgs/viber_whatsapp_icon.png" height="22" alt="">       
+                <img class="whatsapp-icon" src="/imgs/viber_whatsapp_icon.png" height="22" alt=""> 
             </div>
         </div>
     </div>

@@ -15,9 +15,6 @@ class VillaController
         // Список вилл
         $villas = Villa::getVillasList();
 
-        // Получаем имена картинок
-        // $imgNameList = Realty::getImgNameList($villa);
-
         // Подключаем вид
         require_once(ROOT . '/views/villa/index.php');
         return true;

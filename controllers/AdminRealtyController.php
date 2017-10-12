@@ -66,6 +66,7 @@ class AdminRealtyController extends AdminBase
             $options['child_bed'] = $_POST['child_bed'];
             $options['cleaning'] = $_POST['cleaning'];
             $options['status'] = $_POST['status'];
+            $options['map'] = $_POST['map'];
 
             // Флаг ошибок в форме
             $errors = false;
@@ -154,6 +155,7 @@ class AdminRealtyController extends AdminBase
             $options['child_bed'] = $_POST['child_bed'];
             $options['cleaning'] = $_POST['cleaning'];
             $options['status'] = $_POST['status'];
+            $options['map'] = $_POST['map'];
             
             // Если меняется имя объекта, то удаляем старую директорию 
             // вместе с изображениями и создаем новую с новым
@@ -170,7 +172,7 @@ class AdminRealtyController extends AdminBase
             $id = Realty::updateRealtyById($id, $options);
 
             // Если запись изменена
-            if ($id) {
+            if ($id) {               
                 $tmpNames = $_FILES['images']['tmp_name'];
                 $originNames = $_FILES['images']['name'];
                 $dirOfImgs = is_dir(ROOT . "/upload/images/" . $realty['name']);
@@ -206,7 +208,7 @@ class AdminRealtyController extends AdminBase
 
         // Получаем список имен загруженных файлов
         $imgNameList = Realty::getImgNameList($realty);
-
+        
         // Подключаем вид
         require_once(ROOT . '/views/admin_realty/update.php');
         return true;

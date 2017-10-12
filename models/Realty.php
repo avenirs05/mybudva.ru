@@ -19,13 +19,13 @@ class Realty
                 . 'price_may, price_jun, price_jul, price_aug, price_sep, price_oct_apr, '
                 . 'view, action, discount, booking, description, bedrooms, capacity, '
                 . 'dist_tivat, dist_podg, transfer, internet, parking, child_bed, '
-                . 'cleaning, status) '
+                . 'cleaning, status, map) '
                 . 'VALUES '
                 . '(:type, :name, :mini_descr, :area, :dist_sea, :price_through, :price, ' 
                 . ':price_may, :price_jun, :price_jul, :price_aug, :price_sep, :price_oct_apr, :view, '
                 . ':action, :discount, :booking, :description, :bedrooms, :capacity, '
                 . ':dist_tivat, :dist_podg, :transfer, :internet, '
-                . ':parking, :child_bed, :cleaning, :status)';
+                . ':parking, :child_bed, :cleaning, :status, :map)';
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
@@ -59,6 +59,7 @@ class Realty
         $result->bindParam(':child_bed', $options['child_bed'], PDO::PARAM_STR);
         $result->bindParam(':cleaning', $options['cleaning'], PDO::PARAM_STR);
         $result->bindParam(':status', $options['status'], PDO::PARAM_STR);
+        $result->bindParam(':map', $options['map'], PDO::PARAM_STR);
 
         if ($result->execute()) {
             // Если запрос выполенен успешно, возвращаем id добавленной записи
@@ -108,7 +109,8 @@ class Realty
                     parking = :parking, 
                     child_bed = :child_bed, 
                     cleaning = :cleaning,
-                    status = :status
+                    status = :status,
+                    map = :map
                     WHERE id = :id";
 
         // Получение и возврат результатов. Используется подготовленный запрос
@@ -143,6 +145,7 @@ class Realty
         $result->bindParam(':child_bed', $options['child_bed'], PDO::PARAM_STR);
         $result->bindParam(':cleaning', $options['cleaning'], PDO::PARAM_STR);
         $result->bindParam(':status', $options['status'], PDO::PARAM_STR);
+        $result->bindParam(':map', $options['map'], PDO::PARAM_STR);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
         
         if ($result->execute()) {

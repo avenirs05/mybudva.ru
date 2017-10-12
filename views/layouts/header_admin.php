@@ -15,7 +15,7 @@
 
         <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=vy3vaye6rc8e46thnmdeudq9ngbbd9yvpplkx1zyjohyifon"></script>
         <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>        
-        <script>tinymce.init({ selector:'textarea', height : "500" });</script> 
+        <script>tinymce.init({ selector:'#textarea-description', height : "500" });</script> 
 
     </head>
 
@@ -34,7 +34,7 @@
                             <div class="col-sm-6">
                                 <div class="social-icons pull-right">
                                     <ul class="nav navbar-nav">
-                                        <li><a href="/"><i class="fa fa-sign-out"></i>На сайт</a></li>
+                                        <li><a href="/" target="_blank"><i class="fa fa-sign-out"></i>На сайт</a></li>
                                     </ul>
                                 </div>
                             </div>

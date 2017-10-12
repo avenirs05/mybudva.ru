@@ -3,9 +3,7 @@
 <section>
     <div class="container">
         <div class="row">
-
             <br/>
-
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="/admin">Админпанель</a></li>
@@ -15,7 +13,6 @@
             </div>
                         
             <h4><strong>Добавить новый объект</strong></h4>
-
             <br/>
 
             <?php if (isset($errors) && is_array($errors)): ?>
@@ -37,7 +34,7 @@
                         </select> 
                         <br/><br/>
                         
-                        <span>Название объекта</span>
+                        <span>Название объекта </span><span class="input-second-header" style="font-size: 14px;">  (Только латинские буквы. Если в названии есть пробел, заменить на _ Например: Olympia_House).</span>
                         <input type="text" name="name" placeholder="" value="">
                         <br/>
 
@@ -103,12 +100,9 @@
                         </select> 
                         <br/><br/>
                         
-                        <span>Booking</span>
-                        <select name="booking">
-                            <option value="1">Да</option>
-                            <option value="0" selected="selected">Нет</option>
-                        </select> 
-                        <br/><br/>                     
+                        <span>Booking, оценка</span>
+                        <input type="text" name="booking" placeholder="" value="0"> 
+                        <br/>                     
 
                         <span>Количество спален</span>
                         <input type="text" name="bedrooms" placeholder="" value=""> 
@@ -169,8 +163,19 @@
                         <br/><br/>
 
                         <span>Подробное описание</span>
-                        <textarea name="description"></textarea>
+                        <textarea id="textarea-description" name="description"></textarea>
                         <br/>
+
+                        <span>Карта (код): </span> 
+                        <span class="input-second-header">
+                            <a href="https://www.google.ru/maps/@55,103,3z?hl=ru" target="_blank"> Конструктор карт </a>-&gt;
+                            <span>"Поделиться" -&gt;</span>
+                            <span>"Код" -&gt;</span>
+                            <span>Скопировать и вставить код -&gt;</span>
+                            <span>Исправить в коде так: width="100%" height="400"</span>
+                        </span>
+                        <textarea type="text" name="map" rows="5"></textarea>
+                        <br/><br/>
                         
                         <span>Изображение объекта</span>
                         <input id="btn-pict" type="file" name="images[]" placeholder="" value="" multiple>
@@ -180,12 +185,9 @@
                             <?php foreach ($imgNameList as $imgName): ?>
                                 <img src="/upload/images/<?php echo $options['name']; ?>/<?php echo $imgName; ?>" width="150" height="100" alt="">
                             <?php endforeach; ?>
-                        <?php endif; ?>
-                        
-                        
+                        <?php endif; ?>                      
                         
                         <input id="btn-save" type="submit" name="submit" class="btn btn-default" value="Сохранить">
-
                         <br/><br/>
 
                     </form>

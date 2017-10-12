@@ -85,6 +85,7 @@
         <hr>
     <?php endforeach; ?>    
 </div>
+<br>
 
 
 

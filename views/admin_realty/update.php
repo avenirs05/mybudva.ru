@@ -96,12 +96,9 @@
                         </select> 
                         <br/><br/>
 
-                        <span>Booking</span>
-                        <select name="booking">
-                            <option value="1" <?php if ($realty['booking'] == 1) echo ' selected="selected"'; ?> >Есть</option>
-                            <option value="0" <?php if ($realty['booking'] == 0) echo ' selected="selected"'; ?> >Нет</option>
-                        </select> 
-                        <br/><br/>
+                        <span>Booking, оценка</span>
+                        <input type="text" name="booking" placeholder="" value="<?php echo $realty['booking']; ?>">
+                        <br/>
 
                         <span>Количество спален</span>
                         <input type="text" name="bedrooms" placeholder="" value="<?php echo $realty['bedrooms']; ?>">
@@ -161,12 +158,16 @@
                         <br/><br/>
 
                         <span>Подробное описание</span>
-                        <textarea name="description"><?php echo $realty['description']; ?></textarea>
-                        
+                        <textarea id="textarea-description" name="description"><?php echo $realty['description']; ?></textarea>  
+                        <br/>                    
                         
                         <span>Изображение объекта</span>                     
                         <input type="file" name="images[]" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
                         <br/>
+
+                        <span>Карта (код)</span>
+                        <textarea name="map" rows="5"><?php echo $realty['map']; ?></textarea>
+                        <br><br>
                         
                         <?php if (isset($imgNameList)): ?>
                             <?php foreach ($imgNameList as $imgName): ?>
@@ -177,7 +178,7 @@
                             <?php endforeach; ?>
                         <?php endif; ?>
                                 
-                        <br/> <br/>
+                        <br/><br/>
                                 
                         <input id="btn-save" type="submit" name="submit" class="btn btn-default" value="Сохранить">                      
                     </form>

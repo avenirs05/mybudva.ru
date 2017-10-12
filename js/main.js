@@ -1,7 +1,9 @@
 $(function () {
 
+
+
     $('#carousel-main-screen').carousel();
-    $('#carousel-gallery-mob').carousel();
+    $('#carousel-gallery-mob').carousel({ interval: false });
     $('.burger-menu').click(function() { $('#modal-menu').modal('show'); });
 
     $("#lightgallery").lightGallery( { showThumbByDefault: true } );
@@ -23,11 +25,33 @@ $(function () {
       $(".footer").addClass("navbar-fixed-bottom");
     }
 
+    
 
+    function changeColorMenuItem () {
+        var location = window.location.href;  
+        var color = '#FFFF33';
 
+        if ( location.match(/index.php/) ) {
+            $('#main-link').css('color', color);        
+        }
+        if ( location.match(/villa/) ) {
+            $('#villa-link').css('color', color);        
+        }
+        if ( location.match(/apartment/) ) {
+            $('#apartment-link').css('color', color);        
+        }
+        if ( location.match(/feedback/) ) {
+            $('#feedback-link').css('color', color);        
+        }
+        if ( location.match(/contacts/) ) {
+            $('#contacts-link').css('color', color);        
+        }
+    }
+
+    changeColorMenuItem ();
 
     // Уменьшение изображения в галерее
-    // $('#lightgallery img').width('82');
-    // $('#lightgallery img').height('54');  
+    $('#lightgallery img').width('82');
+    $('#lightgallery img').height('54');  
 
 });

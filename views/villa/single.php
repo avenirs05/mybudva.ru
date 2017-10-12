@@ -10,7 +10,7 @@
 		<div class="lightgallery-wrap">
 			<div id="lightgallery">
 				<?php foreach ($imgNameList as $img): ?>
-			    	<a href="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>">        	    <img width="82" height="54" class="img-responsive" src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>" alt="">
+			    	<a href="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>">        	    <img class="img-responsive" src="/upload/images/<?php echo $villa['name']; ?>/<?php echo $img; ?>" alt="">
 			    	</a>    	
 				<?php endforeach; ?>
 			</div>
@@ -22,14 +22,14 @@
 </div>
 <br>
 
-<div id="carousel-main-screen" class="carousel slide visible-xs-block visible-sm-block" data-ride="carousel">  
+<div id="carousel-gallery-mob" class="carousel slide visible-xs-block visible-sm-block" data-ride="carousel">  
     <!-- Indicators -->
     <ol class="carousel-indicators">
 		<?php for ($i = 0; $i < count($imgNameList); $i++): ?>
 			<?php if ($i == 0): ?>
-				<li data-target="#carousel-main-screen" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-gallery-mob" data-slide-to="0" class="active"></li>
 			<?php else: ?>				
-				<li data-target="#carousel-main-screen" data-slide-to="<?php echo $i; ?>"></li>
+				<li data-target="#carousel-gallery-mob" data-slide-to="<?php echo $i; ?>"></li>
 			<?php endif; ?>	   				
 		<?php endfor; ?>
 	</ol>
@@ -47,11 +47,11 @@
 		<?php endfor; ?>   	
     </div>
   <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-main-screen" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#carousel-gallery-mob" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#carousel-main-screen" role="button" data-slide="next">
+    <a class="right carousel-control" href="#carousel-gallery-mob" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
@@ -73,7 +73,7 @@
 				<div class="param-even"><strong>Паркинг</strong></div>
 				<div><strong>Детская кроватка</strong></div>
 				<div class="param-even"><strong>Уборка</strong></div><br>
-				<div><strong>Описание</strong></div>				
+				<!-- <div><strong>Описание</strong></div> -->				
 			</div>
 			<div id="val-of-realty" class="big-img-realty visible-md-block visible-lg-block">  
 				<div><?php echo $villa['area']; ?> м2</div>
@@ -88,10 +88,10 @@
 				<div class="param-even">бесплатный</div>
 				<div>под запрос, 5€ в сутки</div>
 				<div class="param-even">1 раз в неделю со сменой постельного белья и полотенец</div><br>	
-				<div id="fake-dot">.</div>			
+				<!-- <div id="fake-dot">.</div>	 -->		
 			</div>
 			<div id="description"><?php echo $villa['description']; ?></div>
-			<h3 id="h3-price-per-day" class="text-center">Цена в сутки <span class="red">(без учета спецпредложений и скидок)</span></h3>
+			<h3 id="h3-price-per-day" class="text-center">Цена в сутки <span class="red no-discount">(без учета спецпредложений и скидок)</span></h3>
 			<table class="table table-bordered table-prices">
 				<tr>
 					<th>май</th>
@@ -170,7 +170,7 @@
 			</table>
 			<br>
 			<div id="description"><?php echo $villa['description']; ?></div>	
-			<h3 class="text-center">Цена в сутки <span class="red">(без учета спецпредложений и скидок)</span></h3>		
+			<h3 class="text-center">Цена в сутки <span class="red no-discount">(без учета спецпредложений и скидок)</span></h3>		
 			<table class="table table-prices-mob">
 				<tr class="param-even">
 					<th>май</th>
@@ -181,16 +181,16 @@
 					<td><?php echo $villa['price_may']; ?> €</td>
 					<td><?php echo $villa['price_jun']; ?> €</td>
 					<td><?php echo $villa['price_jul']; ?> €</td>
-				</tr>
-			</table>
-			<table class="table table-prices-mob">
-				<tr class="param-even">
+				</tr>	
+				<tr>
+					<td colspan="3"></td>
+				</tr>									
+				<tr class="param-odd">
 					<th>август</th>
 					<th>сентябрь</th>
 					<th>окт-апр</th>
 				</tr>
-
-				<tr class="param-even">
+				<tr class="param-odd">
 					<td><?php echo $villa['price_aug']; ?> €</td>
 					<td><?php echo $villa['price_sep']; ?> €</td>
 					<td><?php echo $villa['price_oct_apr']; ?> €</td>
@@ -199,6 +199,11 @@
 		</div>
 	</div>
 </div>
+
+<!-- google карта -->
+<?php echo $villa['map']; ?>
+
+
 
 
 
