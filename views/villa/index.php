@@ -10,7 +10,13 @@
     <?php foreach ($villas as $villaItem): ?>
         <?php $firstImgName = Realty::getImgNameList($villaItem); ?>        
         <?php $villaName = str_replace('_', ' ', $villaItem['name']); ?>
-        <div class="row item-strip">        
+        <div class="row item-strip">
+            <?php if ($villaItem['booking'] !== 'нет'): ?> 
+            <div class="booking-wrap">                               
+                <div class="rating text-center"><?php echo $villaItem['booking']; ?></div>
+                <img class="img-responsive" src="/imgs/booking-logo.jpg" alt="">
+            </div>   
+            <?php endif; ?>     
             <div class="col-md-4">
                 <a href="/villa/single/<?php echo $villaItem['name']; ?>/<?php echo $villaItem['id']; ?>.php" target="_blank">
                     <img src="/upload/images/<?php echo $villaItem['name']; ?>/<?php echo $firstImgName[0]; ?>" alt="" class="img-responsive">
@@ -26,7 +32,11 @@
             </div>
             <div class="price-and-btn">
                 <div class="text-right line-through line-through-parent">
-                    <span class="line-through-child">€ <?php echo $villaItem['price_through']; ?></span>
+                    <?php if ( !(empty($villaItem['price_through'])) ): ?> 
+                        <span class="line-through-child"> 
+                            <span id="from">от</span> € <?php echo $villaItem['price_through']; ?>                  
+                        </span> 
+                    <?php endif; ?>                       
                 </div>
                 <div class="text-right">
                     <span>€ <?php echo $villaItem['price']; ?></span>

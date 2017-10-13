@@ -15,7 +15,7 @@ class Villa
         $db = Db::getConnection();
 
         // Запрос к БД
-        $result = $db->query('SELECT id, name, mini_descr, area, dist_sea, price_through, price FROM realty WHERE status = "1" and type = "вилла" ORDER BY id ASC');
+        $result = $db->query('SELECT id, name, mini_descr, area, dist_sea, price_through, price, booking FROM realty WHERE status = "1" and type = "вилла" ORDER BY id ASC');
 
         // Получение и возврат результатов
         $i = 0;
@@ -28,6 +28,7 @@ class Villa
             $villasList[$i]['dist_sea'] = $row['dist_sea'];
             $villasList[$i]['price_through'] = $row['price_through'];
             $villasList[$i]['price'] = $row['price'];
+            $villasList[$i]['booking'] = $row['booking'];
             
             $i++;
         }

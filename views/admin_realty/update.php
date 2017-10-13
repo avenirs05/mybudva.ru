@@ -30,7 +30,7 @@
                         </select> 
                         <br/><br/>
 
-                        <span>Название</span>
+                        <span>Название объекта</span><span class="input-second-header">  (Только латинские буквы. Если в названии есть пробел, заменить на _ Например: Olympia_House).</span>
                         <input type="text" name="name" placeholder="" value="<?php echo $realty['name']; ?>">
                         <br/>
 
@@ -96,7 +96,7 @@
                         </select> 
                         <br/><br/>
 
-                        <span>Booking, оценка</span>
+                        <span>Booking, оценка </span><span class="input-second-header"> (если значок надо убрать, впишите "нет" - без кавычек)</span>
                         <input type="text" name="booking" placeholder="" value="<?php echo $realty['booking']; ?>">
                         <br/>
 
@@ -161,11 +161,18 @@
                         <textarea id="textarea-description" name="description"><?php echo $realty['description']; ?></textarea>  
                         <br/>                    
                         
-                        <span>Изображение объекта</span>                     
+                        <span>Изображение объекта</span><span class="input-second-header">  (1-ое изображение должно иметь пропорцию 1:1,5. Только латинские буквы в названии изображения. Без пробелов. Нельзя использовать "_")</span>                     
                         <input type="file" name="images[]" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
                         <br/>
 
                         <span>Карта (код)</span>
+                        <span class="input-second-header">
+                            <a href="https://www.google.ru/maps/@55,103,3z?hl=ru" target="_blank"> Конструктор карт </a>-&gt;
+                            <span>"Поделиться" -&gt;</span>
+                            <span>"Код" -&gt;</span>
+                            <span>Скопировать и вставить код -&gt;</span>
+                            <span>Исправить в коде так: width="100%" height="400"</span>
+                        </span>
                         <textarea name="map" rows="5"><?php echo $realty['map']; ?></textarea>
                         <br><br>
                         

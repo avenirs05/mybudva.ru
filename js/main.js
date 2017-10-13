@@ -51,7 +51,7 @@ $(function () {
     changeColorMenuItem ();
 
     // Уменьшение изображения в галерее
-    $('#lightgallery img').width('82');
-    $('#lightgallery img').height('54');  
+    $('#lightgallery img').width('65');
+    $('#lightgallery img').height('43');  
 
 });

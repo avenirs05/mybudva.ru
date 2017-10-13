@@ -34,7 +34,7 @@
                         </select> 
                         <br/><br/>
                         
-                        <span>Название объекта </span><span class="input-second-header" style="font-size: 14px;">  (Только латинские буквы. Если в названии есть пробел, заменить на _ Например: Olympia_House).</span>
+                        <span>Название объекта </span><span class="input-second-header">  (Только латинские буквы. Если в названии есть пробел, заменить на _ Например: Olympia_House).</span>
                         <input type="text" name="name" placeholder="" value="">
                         <br/>
 
@@ -78,8 +78,8 @@
                         <input type="text" name="price_sep" placeholder="" value=""> 
                         <br/>
 
-                        <span>Цена - октябрь - апрель, €</span>
-                        <input type="text" name="price_oct_apr" placeholder="" value=""> 
+                        <span>Цена - октябрь - апрель</span>
+                        <input type="text" name="price_oct_apr" placeholder="" value="€"> 
                         <br/>
                         
                         <span>Вид (на море, горы и т.д.)</span>
@@ -101,7 +101,7 @@
                         <br/><br/>
                         
                         <span>Booking, оценка</span>
-                        <input type="text" name="booking" placeholder="" value="0"> 
+                        <input type="text" name="booking" placeholder="" value="нет"> 
                         <br/>                     
 
                         <span>Количество спален</span>
@@ -177,7 +177,7 @@
                         <textarea type="text" name="map" rows="5"></textarea>
                         <br/><br/>
                         
-                        <span>Изображение объекта</span>
+                        <span>Изображение объекта </span><span class="input-second-header">  (1-ое изображение должно иметь пропорцию 1:1,5. Только латинские буквы в названии изображения. Без пробелов. Нельзя использовать "_")</span>
                         <input id="btn-pict" type="file" name="images[]" placeholder="" value="" multiple>
                         <br/>
                         
