@@ -2,7 +2,7 @@
 
 <?php $villaName = str_replace('_', ' ', $villa['name']); ?>
 
-<h1 class="text-center visible-md-block visible-lg-block"><?php echo $villaName; ?></h1><br>
+<h1 id="in-title" class="text-center visible-md-block visible-lg-block"><?php echo $villaName; ?></h1><br>
 <h1 class="text-center h1-mob-single visible-xs-block visible-sm-block"><?php echo $villaName; ?></h1>
 
 <div class="container-fluid visible-md-block visible-lg-block">   

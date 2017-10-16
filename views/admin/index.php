@@ -16,7 +16,7 @@
             
             <ul class="admin-main-menu">
                 <li><a href="/admin/realty">• Объекты недвижимости</a></li>
-                <li><a href="/admin/category">• Отзывы</a></li>
+                <li><a href="/admin/category">• Отзывы (coming soon...)</a></li>
                 <!-- <li><a href="/admin/order">Управление заказами</a></li> -->
             </ul>
             

@@ -1519,9 +1519,14 @@ h2.title {
 
 #btn-save {
     background-color: #339933;
-    font-size: 28px;
+    font-size: 22px;
     color: #fff;
     height: 55px;
+    position: fixed;
+    z-index: 10000;
+    right: 26px;
+    top: 80px;
+    width: 150px;
 }
 
 #btn-save:hover {

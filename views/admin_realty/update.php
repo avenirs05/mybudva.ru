@@ -38,11 +38,11 @@
                         <input type="text" name="mini_descr" placeholder="" value="<?php echo $realty['mini_descr']; ?>">
                         <br/>
 
-                        <span>Площадь</span>
+                        <span>Площадь, м</span>
                         <input type="text" name="area" placeholder="" value="<?php echo $realty['area']; ?>">
                         <br/>
 
-                        <span>Расстояние до моря</span>
+                        <span>Расстояние до моря, м</span>
                         <input type="text" name="dist_sea" placeholder="" value="<?php echo $realty['dist_sea']; ?>">
                         <br/>
 
@@ -107,11 +107,11 @@
                         <span>Вместимость объекта, человек</span>
                         <input type="text" name="capacity" placeholder="" value="<?php echo $realty['capacity']; ?>">
                         <br/>                                             
-                        <span>Расстояние до а/п Тиват</span>
+                        <span>Расстояние до а/п Тиват, км</span>
                         <input type="text" name="dist_tivat" placeholder="" value="<?php echo $realty['dist_tivat']; ?>"> 
                         <br/>
 
-                        <span>Расстояние до а/п Подгорица</span>
+                        <span>Расстояние до а/п Подгорица, км</span>
                         <input type="text" name="dist_podg" placeholder="" value="<?php echo $realty['dist_podg']; ?>"> 
                         <br/>
 
@@ -161,7 +161,7 @@
                         <textarea id="textarea-description" name="description"><?php echo $realty['description']; ?></textarea>  
                         <br/>                    
                         
-                        <span>Изображение объекта</span><span class="input-second-header">  (1-ое изображение должно иметь пропорцию 1:1,5. Только латинские буквы в названии изображения. Без пробелов. Нельзя использовать "_")</span>                     
+                        <span>Изображение объекта</span><span class="input-second-header">  (Максимальное количество: 30 штук. 1-ое изображение должно иметь пропорцию 1:1,5. Только латинские буквы в названии изображения. Нельзя использовать "_" в названии изображения. Желательное разрешение изображений - не более 1024x768)</span>                     
                         <input type="file" name="images[]" placeholder="" value="<?php echo $realty['image']; ?>" multiple>                  
                         <br/>
 

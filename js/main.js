@@ -1,7 +1,5 @@
 $(function () {
 
-
-
     $('#carousel-main-screen').carousel();
     $('#carousel-gallery-mob').carousel({ interval: false });
     $('.burger-menu').click(function() { $('#modal-menu').modal('show'); });
@@ -26,7 +24,7 @@ $(function () {
     }
 
     
-
+    // Подкрашивание цветом текущего пункта меню
     function changeColorMenuItem () {
         var location = window.location.href;  
         var color = '#FFFF33';
@@ -50,8 +48,30 @@ $(function () {
 
     changeColorMenuItem ();
 
+
     // Уменьшение изображения в галерее
     $('#lightgallery img').width('65');
     $('#lightgallery img').height('43');  
+
+
+    //Динамическое изменение текста в title
+    if ( location.match(/index.php/) ) {
+        $('title').text('Аренда вилл и апартаментов в Черногории');        
+    }
+    if ( location.match(/villa$/) ) {
+        $('title').text('Виллы');        
+    }
+    if ( location.match(/apartment$/) ) {
+        $('title').text('Апартаменты');       
+    }
+    if ( location.match(/feedback$/) ) {
+        $('title').text('Отзывы');        
+    }
+    if ( location.match(/contacts$/) ) {
+        $('title').text('Контакты');        
+    }
+    if ( location.match(/single/) ) {
+        $('title').text( $('#in-title').text() );     
+    }
 
 });

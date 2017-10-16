@@ -225,7 +225,7 @@ a {
 	position: absolute;
 	color: #fff;
 	left: 12px;
-	top: 10px;
+	top: 11px;
 }
 
 .line-through {
@@ -488,7 +488,8 @@ a {
 #lightgallery, #param-of-realty {
 	width: 332px;
 	float: left;
-	margin-right: 2px;
+	/*margin-right: 2px;*/
+	/*margin-left: 2px;*/
 }
 
 .lightgallery-wrap, .params-val-wrap {
@@ -507,7 +508,7 @@ a {
 	display: block;	
 	width: 65px;
 	height: 43px;
-	float: right;
+	float: left;
 	/*border: 1px solid white;*/
 	margin-top: 1px;
 	margin-right: 1px;
@@ -522,11 +523,13 @@ a {
 }
 
 .param-odd {
-	background-color: #FFFFCC;
+	/*background-color: #FFFFCC;*/
+	background-color: #F9F9F9;
 }
 
 .param-even {
-	background-color: #FFFFCC;
+	/*background-color: #FFFFCC;*/
+	background-color: #F9F9F9;
 }
 
 .param-odd {
@@ -548,7 +551,7 @@ a {
 
 #param-of-realty,
 #val-of-realty {
-	padding-left: 3px;
+	/*padding-left: 3px;*/
 	font-size: 16px;
 }
 
@@ -569,6 +572,7 @@ a {
 .big-img-realty {
 	float: left;
 	width: 550px;
+	margin-left: -1px;
 	/*margin-left: 2px;*/
 }
 

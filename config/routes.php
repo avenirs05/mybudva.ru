@@ -36,7 +36,7 @@ return array(
     'villa/single/(\w+)/([0-9]+)' => 'villa/single/$1/$2', 
 
     // Одиночная запись - один апартамент
-    'apartment/single/(\w+)/([0-9]+)' => 'villa/single/$1/$2', 
+    'apartment/single/(\w+)/([0-9]+)' => 'apartment/single/$1/$2', 
 
     // Страницы Виллы и Апартаменты
     'villa' => 'villa/index',
