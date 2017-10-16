@@ -9,6 +9,7 @@ return array(
     'password' => '',
 );
 
+
 // return array(
 //     'host' => 'u475861.mysql.masterhost.ru',
 //     'dbname' => 'u475861_2',

@@ -33,8 +33,9 @@
             <div class="price-and-btn">
                 <div class="text-right line-through line-through-parent">
                     <?php if ( !(empty($villaItem['price_through'])) ): ?> 
+                        <span id="from">от</span>
                         <span class="line-through-child"> 
-                            <span id="from">от</span> € <?php echo $villaItem['price_through']; ?>                  
+                            € <?php echo $villaItem['price_through']; ?>                  
                         </span> 
                     <?php endif; ?>                       
                 </div>
@@ -76,7 +77,9 @@
             </div>
             <div id="prices-mob" class="price-and-btn">
                 <div class="text-right line-through line-through-parent">
-                    <span id="price-through-mob" class="line-through-child">€ <?php echo $villaItem['price_through']; ?></span>
+                    <?php if ( !(empty($villaItem['price_through'])) ): ?>
+                        <span id="price-through-mob" class="line-through-child">€ <?php echo $villaItem['price_through']; ?></span>
+                    <?php endif; ?> 
                 </div>
                 <div class="text-right">
                     <span id="price-mob">€ <?php echo $villaItem['price']; ?></span>

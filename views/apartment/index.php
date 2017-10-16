@@ -33,8 +33,9 @@
             <div class="price-and-btn">
                 <div class="text-right line-through line-through-parent">
                     <?php if ( !(empty($apartmentItem['price_through'])) ): ?> 
+                        <span id="from">от</span>
                         <span class="line-through-child"> 
-                            <span id="from">от</span> € <?php echo $apartmentItem['price_through']; ?>                  
+                            € <?php echo $apartmentItem['price_through']; ?>                  
                         </span> 
                     <?php endif; ?>                       
                 </div>
@@ -53,7 +54,7 @@
 <div class="container-fluid visible-xs-block visible-sm-block single-realty-mob">
     <div class="row">
         <div class="col-xs-12">
-            <h1 class="text-center h1-mob">Виллы</h1>
+            <h1 class="text-center h1-mob">Апартаменты</h1>
             <hr>
         </div>
     </div> 
@@ -76,7 +77,9 @@
             </div>
             <div id="prices-mob" class="price-and-btn">
                 <div class="text-right line-through line-through-parent">
-                    <span id="price-through-mob" class="line-through-child">€ <?php echo $apartmentItem['price_through']; ?></span>
+                    <?php if ( !(empty($apartmentItem['price_through'])) ): ?>
+                        <span id="price-through-mob" class="line-through-child">€ <?php echo $apartmentItem['price_through']; ?></span>
+                    <?php endif; ?>  
                 </div>
                 <div class="text-right">
                     <span id="price-mob">€ <?php echo $apartmentItem['price']; ?></span>
