@@ -121,6 +121,7 @@ class AdminRealtyController extends AdminBase
         // Получаем данные о конкретном заказе
         $realty = Realty::getRealtyById($id);
 
+        
         // Обработка формы
         if (isset($_POST['submit'])) {
             // Если форма отправлена

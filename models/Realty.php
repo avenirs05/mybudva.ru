@@ -240,7 +240,7 @@ class Realty
         $db = Db::getConnection();
 
         // Текст запроса к БД
-        $sql = 'SELECT * FROM Realty WHERE id = :id';
+        $sql = 'SELECT * FROM realty WHERE id = :id';
 
         // Используется подготовленный запрос
         $result = $db->prepare($sql);
