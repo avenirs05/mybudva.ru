@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/controllers/AdminRealtyController.php</file>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/models/Realty.php</file>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/update.php</file>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/config/routes.php</file>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/create.php</file>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/views/admin_realty/index.php</file>
-            <file>file:/C:/Users/lenovo_note/Dropbox/OpenServer/domains/mybudva.ru.local/template/js/main.js</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
