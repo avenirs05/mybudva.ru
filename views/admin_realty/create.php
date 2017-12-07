@@ -86,14 +86,14 @@
                         <input type="text" name="view" placeholder="" value=""> 
                         <br/>
 
-                        <span>Акция</span>
+                        <span>Акция</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="action">
                             <option value="1">Да</option>
                             <option value="0" selected="selected">Нет</option>
                         </select> 
                         <br/><br/>
                          
-                        <span>Скидка</span>
+                        <span>Скидка</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="discount">
                             <option value="1">Да</option>
                             <option value="0" selected="selected">Нет</option>
@@ -120,35 +120,35 @@
                         <input type="text" name="dist_podg" placeholder="" value=""> 
                         <br/>
 
-                        <span>Трансфер</span>
+                        <span>Трансфер</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="transfer">
                             <option value="1" selected="selected">Платный</option>
                             <option value="0">Бесплатный</option>
                         </select> 
                         <br/><br/>
                         
-                        <span>Интернет</span>
+                        <span>Интернет</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="internet">
                             <option value="1">Платный</option>
                             <option value="0" selected="selected">Бесплатный</option>
                         </select> 
                         <br/><br/>
                          
-                        <span>Паркинг</span>
+                        <span>Паркинг</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="parking">
                             <option value="1" selected="selected">Платный</option>
                             <option value="0">Бесплатный</option>
                         </select> 
                         <br/><br/>
                         
-                        <span>Детская кроватка</span>
+                        <span>Детская кроватка</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="child_bed">
                             <option value="1" selected="selected">Платная</option>
                             <option value="0">Бесплатная</option>
                         </select> 
                         <br/><br/>
                         
-                        <span>Уборка</span>
+                        <span>Уборка</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="cleaning">
                             <option value="1">Платная</option>
                             <option value="0" selected="selected">Бесплатная</option>

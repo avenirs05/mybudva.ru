@@ -82,14 +82,14 @@
                         <input type="text" name="view" placeholder="" value="<?php echo $realty['view']; ?>"> 
                         <br/>
 
-                        <span>Акция</span>
+                        <span>Акция</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="action">
                             <option value="1" <?php if ($realty['action'] == 1) echo ' selected="selected"'; ?> >Есть</option>
                             <option value="0" <?php if ($realty['action'] == 0) echo ' selected="selected"'; ?> >Нет</option>
                         </select> 
                         <br/><br/>
 
-                        <span>Скидка</span>
+                        <span>Скидка</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="discount">
                             <option value="1" <?php if ($realty['discount'] == 1) echo ' selected="selected"'; ?> >Есть</option>
                             <option value="0" <?php if ($realty['discount'] == 0) echo ' selected="selected"'; ?> >Нет</option>
@@ -115,35 +115,35 @@
                         <input type="text" name="dist_podg" placeholder="" value="<?php echo $realty['dist_podg']; ?>"> 
                         <br/>
 
-                        <span>Трансфер</span>
+                        <span>Трансфер</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="transfer">
                             <option value="1" <?php if ($realty['transfer'] == 1) echo ' selected="selected"'; ?> >Платный</option>
                             <option value="0" <?php if ($realty['transfer'] == 0) echo ' selected="selected"'; ?> >Бесплатный</option>
                         </select> 
                         <br/><br/>
 
-                        <span>Интернет</span>
+                        <span>Интернет</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="internet">
                             <option value="1" <?php if ($realty['internet'] == 1) echo ' selected="selected"'; ?> >Платный</option>
                             <option value="0" <?php if ($realty['internet'] == 0) echo ' selected="selected"'; ?> >Бесплатный</option>
                         </select> 
                         <br/><br/>
 
-                        <span>Паркинг</span>
+                        <span>Паркинг</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="parking">
                             <option value="1" <?php if ($realty['parking'] == 1) echo ' selected="selected"'; ?> >Платный</option>
                             <option value="0" <?php if ($realty['parking'] == 0) echo ' selected="selected"'; ?> >Бесплатный</option>
                         </select> 
                         <br/><br/>
 
-                        <span>Детская кроватка</span>
+                        <span>Детская кроватка</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="child_bed">
                             <option value="1" <?php if ($realty['child_bed'] == 1) echo ' selected="selected"'; ?> >Платная</option>
                             <option value="0" <?php if ($realty['child_bed'] == 0) echo ' selected="selected"'; ?> >Бесплатная</option>
                         </select> 
                         <br/><br/>
 
-                        <span>Уборка</span>
+                        <span>Уборка</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Значение жестко зафиксировано. Какое - смотри на сайте. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="cleaning">
                             <option value="1" <?php if ($realty['cleaning'] == 1) echo ' selected="selected"'; ?> >Платная</option>
                             <option value="0" <?php if ($realty['cleaning'] == 0) echo ' selected="selected"'; ?> >Бесплатная</option>
