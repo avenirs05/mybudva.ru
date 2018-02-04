@@ -45,6 +45,18 @@
                         <span>Площадь, м</span>
                         <input type="text" name="area" placeholder="" value="">
                         <br/>
+
+                        <span>Вид (на море, горы и т.д.)</span>
+                        <input type="text" name="view" placeholder="" value=""> 
+                        <br/>
+
+                        <span>Вместимость объекта, человек</span>
+                        <input type="text" name="capacity" placeholder="" value="">
+                        <br/>
+
+                        <span>Количество спален</span>
+                        <input type="text" name="bedrooms" placeholder="" value=""> 
+                        <br/>   
                         
                         <span>Расстояние до моря, м</span>
                         <input type="text" name="dist_sea" placeholder="" value="">
@@ -80,11 +92,7 @@
 
                         <span>Цена - октябрь - апрель</span>
                         <input type="text" name="price_oct_apr" placeholder="" value="€"> 
-                        <br/>
-                        
-                        <span>Вид (на море, горы и т.д.)</span>
-                        <input type="text" name="view" placeholder="" value=""> 
-                        <br/>
+                        <br/>                    
 
                         <span>Акция</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="action">
@@ -102,15 +110,7 @@
                         
                         <span>Booking, оценка</span>
                         <input type="text" name="booking" placeholder="" value="нет"> 
-                        <br/>                     
-
-                        <span>Количество спален</span>
-                        <input type="text" name="bedrooms" placeholder="" value=""> 
-                        <br/>
-                        
-                        <span>Вместимость объекта, человек</span>
-                        <input type="text" name="capacity" placeholder="" value="">
-                        <br/>
+                        <br/>                  
 
                         <span>Расстояние до а/п Тиват, км</span>
                         <input type="text" name="dist_tivat" placeholder="" value=""> 

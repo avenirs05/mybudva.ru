@@ -22,12 +22,14 @@
                     <img src="/upload/images/<?php echo $villaItem['name']; ?>/<?php echo $firstImgName[0]; ?>" alt="" class="img-responsive">
                 </a>
             </div>
-            <div class="col-md-8">                
+            <div class="col-md-8 descr-text-wrap">                
                 <h3><a href="/villa/single/<?php echo $villaItem['name']; ?>/<?php echo $villaItem['id']; ?>.php" target="_blank"><?php echo $villaName; ?></a></h3>
-                <h4><?php echo $villaItem['mini_descr']; ?></h4>
+                <h4 class="header-mini-descr"><?php echo $villaItem['mini_descr']; ?></h4>
                 <ul>
                     <li><span class="bold">Площадь: </span><?php echo $villaItem['area']; ?> м2</li>
                     <li><span class="bold">Расстояние до моря:</span> <?php echo $villaItem['dist_sea']; ?> м</li>
+                    <li><span class="bold">Количество спален:</span> <?php echo $villaItem['bedrooms']; ?></li>
+                    <li><span class="bold">Вместимость:</span> <?php echo $villaItem['capacity']; ?> человек</li>
                 </ul>
             </div>
             <div class="price-and-btn">

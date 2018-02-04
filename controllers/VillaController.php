@@ -14,6 +14,7 @@ class VillaController
     {
         // Список вилл
         $villas = Villa::getVillasList();
+        //d($villas);
 
         // Подключаем вид
         require_once(ROOT . '/views/villa/index.php');

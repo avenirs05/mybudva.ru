@@ -3,6 +3,18 @@ html {
   overflow-x: auto;
 }
 
+.item-strip .descr-text-wrap li {
+	margin-bottom: 10px;
+}
+
+/*.item-strip .descr-text-wrap h4 {
+	margin-bottom: 30px;
+}*/
+
+.item-strip .header-mini-descr {
+	margin-bottom: 30px;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
@@ -95,10 +107,6 @@ h1 {
 
 .prices-mob {
 	position: static;
-}
-
-.single-realty-mob a {
-
 }
 
 .single-realty-mob button {
@@ -488,8 +496,6 @@ a {
 #lightgallery, #param-of-realty {
 	width: 332px;
 	float: left;
-	/*margin-right: 2px;*/
-	/*margin-left: 2px;*/
 }
 
 .lightgallery-wrap, .params-val-wrap {
@@ -509,7 +515,6 @@ a {
 	width: 65px;
 	height: 43px;
 	float: left;
-	/*border: 1px solid white;*/
 	margin-top: 1px;
 	margin-right: 1px;
 }
@@ -523,12 +528,10 @@ a {
 }
 
 .param-odd {
-	/*background-color: #FFFFCC;*/
 	background-color: #F9F9F9;
 }
 
 .param-even {
-	/*background-color: #FFFFCC;*/
 	background-color: #F9F9F9;
 }
 
@@ -551,7 +554,6 @@ a {
 
 #param-of-realty,
 #val-of-realty {
-	/*padding-left: 3px;*/
 	font-size: 16px;
 }
 
@@ -573,7 +575,6 @@ a {
 	float: left;
 	width: 550px;
 	margin-left: -1px;
-	/*margin-left: 2px;*/
 }
 
 #val-of-realty {
@@ -670,7 +671,6 @@ a {
 	}
 	.header .glyphicon-earphone {
 	    font-size: 17px;
-/*	    margin-right: -5px;*/
 	}
 }
 
