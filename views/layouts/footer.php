@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-3">
                 <div><a href="/contacts" target="_blank">Контакты</a></div>
-                <div>+382 67 25 86 66</div>
+                <div>+382 68 332 008</div>
                 <div>arenda@mybudva.ru</div>
             </div>
             <div class="col-md-3"></div> 

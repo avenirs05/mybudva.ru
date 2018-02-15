@@ -61,7 +61,7 @@
         <div class="phones-wrapper text-right">
             <div>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
-                <span class="phone-digits digits">+382 67 25 86 66</span>     
+                <span class="phone-digits digits">+382 68 332 008</span>     
                 <img class="whatsapp-icon" src="/imgs/viber_whatsapp_icon.png" height="22" alt=""> 
             </div>
         </div>
@@ -75,7 +75,7 @@
         <div class="phones-wrapper text-right">
             <div>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
-                <span class="phone-digits">+382 67 25 86 66</span> 
+                <span class="phone-digits">+382 68 332 008</span> 
                 <img class="whatsapp-icon" src="imgs/viber_whatsapp_icon.png" alt=""> 
             </div>
         </div>

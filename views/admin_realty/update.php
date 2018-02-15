@@ -42,6 +42,18 @@
                         <input type="text" name="area" placeholder="" value="<?php echo $realty['area']; ?>">
                         <br/>
 
+                        <span>Вид (на море, горы и т.д.)</span>
+                        <input type="text" name="view" placeholder="" value="<?php echo $realty['view']; ?>"> 
+                        <br/>
+
+                        <span>Вместимость объекта, человек</span>
+                        <input type="text" name="capacity" placeholder="" value="<?php echo $realty['capacity']; ?>">
+                        <br/>   
+
+                        <span>Количество спален</span>
+                        <input type="text" name="bedrooms" placeholder="" value="<?php echo $realty['bedrooms']; ?>">
+                        <br/> 
+
                         <span>Расстояние до моря, м</span>
                         <input type="text" name="dist_sea" placeholder="" value="<?php echo $realty['dist_sea']; ?>">
                         <br/>
@@ -78,10 +90,6 @@
                         <input type="text" name="price_oct_apr" placeholder="" value="<?php echo $realty['price_oct_apr']; ?>"> 
                         <br/>
 
-                        <span>Вид (на море, горы и т.д.)</span>
-                        <input type="text" name="view" placeholder="" value="<?php echo $realty['view']; ?>"> 
-                        <br/>
-
                         <span>Акция</span><span class="input-second-header">&nbsp;&nbsp;&nbsp;Не трогать. Возможно понадобится в будущем. Изменение этого селектора сейчас ни на что не повлияет.</span>
                         <select name="action">
                             <option value="1" <?php if ($realty['action'] == 1) echo ' selected="selected"'; ?> >Есть</option>
@@ -99,14 +107,7 @@
                         <span>Booking, оценка </span><span class="input-second-header"> (если значок надо убрать, впишите "нет" - без кавычек)</span>
                         <input type="text" name="booking" placeholder="" value="<?php echo $realty['booking']; ?>">
                         <br/>
-
-                        <span>Количество спален</span>
-                        <input type="text" name="bedrooms" placeholder="" value="<?php echo $realty['bedrooms']; ?>">
-                        <br/> 
-
-                        <span>Вместимость объекта, человек</span>
-                        <input type="text" name="capacity" placeholder="" value="<?php echo $realty['capacity']; ?>">
-                        <br/>                                             
+                                          
                         <span>Расстояние до а/п Тиват, км</span>
                         <input type="text" name="dist_tivat" placeholder="" value="<?php echo $realty['dist_tivat']; ?>"> 
                         <br/>
