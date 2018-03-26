@@ -165,6 +165,9 @@
                         <span>Подробное описание</span>
                         <textarea id="textarea-description" name="description"></textarea>
                         <br/>
+                            
+                        <span>Отзывы</span>
+                        <textarea name="feedback" id="" cols="30" rows="10"></textarea>
 
                         <span>Карта (код): </span> 
                         <span class="input-second-header">

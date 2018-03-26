@@ -75,6 +75,10 @@
 					<td><?php echo $apartment['price_oct_apr']; ?></td>
 				</tr>
 			</table>
+			<div class="feedback-wrap">
+				<h2 style="text-align: center; margin-bottom: 30px; margin-top: 30px;">Отзывы</h2>
+				<?php echo $apartment['feedback']; ?>
+			</div>
 		</div>
 	</div>
 </div>
@@ -197,6 +201,10 @@
 					<td><?php echo $apartment['price_oct_apr']; ?></td>
 				</tr>
 			</table>
+			<div class="feedback-wrap">
+				<h2 style="text-align: center; margin-bottom: 30px; margin-top: 30px;">Отзывы</h2>
+				<?php echo $apartment['feedback']; ?>
+			</div>
 		</div>
 	</div>
 </div>

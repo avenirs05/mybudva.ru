@@ -185,7 +185,12 @@
                                 </div>                                
                             <?php endforeach; ?>
                         <?php endif; ?>
-                                
+                        
+                        <div style="margin-top: 30px;">Отзывы</div>
+                        <textarea name="feedback" id="" cols="30" rows="10">
+                            <?php echo $realty['feedback']; ?>
+                        </textarea>
+
                         <br/><br/>
                                 
                         <input id="btn-save" type="submit" name="submit" class="btn btn-default" value="Сохранить">                      

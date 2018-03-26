@@ -161,7 +161,8 @@ a {
 	text-align: center;
 }
 
-#description {
+#description,
+.feedback-wrap {
 	padding-left: 7px;
 	font-size: 16px;
 }
@@ -263,11 +264,11 @@ a {
 	margin-bottom: 10px;
 }
 
-.feedback-item-wrap {
+/*.feedback-item-wrap {
 	padding: 0px 200px;
 	font-size: 16px;
 	text-align: justify;
-}
+}*/
 
 .feedback-item-wrap h2 {
 	font-size: 18px;
@@ -594,6 +595,47 @@ a {
 	font-weight: bold;
 }
 
+.faq__title {
+		/*color: #337ab7;*/
+		padding-top: 20px;
+		padding-bottom: 20px; 
+		font-weight: 600;
+}
+
+.faq__sub-title {
+		padding-bottom: 10px; 
+		/*font-weight: bold;*/
+		color: #337ab7;
+}
+
+.faq__subsub-title {
+		font-weight: bold;
+		font-style: italic; 
+}
+
+.faq__answer {
+		padding-bottom: 20px; 
+}
+
+.faq__temp-list {
+		margin-left: 20px;
+}
+
+.faq__fruits-tr,
+.faq__milk-tr,
+.faq__drinks-tr {
+		background-color: #f8f8f8;
+}
+
+.faq__table-heads {
+		background-color: #f8f8f8;
+}
+
+@media screen and (max-device-width: 991px) {
+		.faq__sub-title {
+				text-align: left;
+		}
+}
 
 @media screen and (min-device-width: 320px) {
 	body {
@@ -650,6 +692,9 @@ a {
 	.h1-feedback {
 		font-size: 24px;
 	}
+	.feedback-wrap {
+		padding-left: 0;
+	}
 }
 
 @media screen and (min-device-width: 768px) {
@@ -675,6 +720,9 @@ a {
 }
 
 @media screen and (min-device-width: 992px) {	
+	.feedback-wrap {
+		padding-left: 6px;
+	}
 	.navbar {
 		min-height: 40px;
 	}

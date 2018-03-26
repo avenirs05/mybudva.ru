@@ -67,6 +67,7 @@ class AdminRealtyController extends AdminBase
             $options['cleaning'] = $_POST['cleaning'];
             $options['status'] = $_POST['status'];
             $options['map'] = $_POST['map'];
+            $options['feedback'] = $_POST['feedback'];
 
             // Флаг ошибок в форме
             $errors = false;
@@ -120,10 +121,11 @@ class AdminRealtyController extends AdminBase
 
         // Получаем данные о конкретном заказе
         $realty = Realty::getRealtyById($id);
-
+        //d($realty);
         
         // Обработка формы
         if (isset($_POST['submit'])) {
+            //d($_POST);
             // Если форма отправлена
             // Получаем данные из формы редактирования. При необходимости можно валидировать значения
             $options['type'] = $_POST['type'];
@@ -157,6 +159,7 @@ class AdminRealtyController extends AdminBase
             $options['cleaning'] = $_POST['cleaning'];
             $options['status'] = $_POST['status'];
             $options['map'] = $_POST['map'];
+            $options['feedback'] = $_POST['feedback'];
             
             // Если меняется имя объекта, то удаляем старую директорию 
             // вместе с изображениями и создаем новую с новым
