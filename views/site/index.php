@@ -200,10 +200,10 @@
                 <h3 class="faq__sub-title">СКОЛЬКО СТОИТ АРЕНДА АВТОМОБИЛЯ В СЕЗОН БЕЗ ВОДИТЕЛЯ В ЧЕРНОГОРИИ?</h3>
                 <div class="faq__answer">
                     <p>Автомобиль не старше 5 лет:</p>
-                    <p><i>Эконом</i>: от 30 €/сутки</p>
-                    <p><i>Стандарт</i>: от 35 €/сутки</p>
-                    <p><i>Минивен (5+2)</i>: от 45 €/сутки</p>
-                    <p><i>Внедорожник</i>: от 50 €/сутки</p>
+                    <p><i>Эконом:</i> от 30 €/сутки</p>
+                    <p><i>Стандарт:</i> от 35 €/сутки</p>
+                    <p><i>Минивен (5+2):</i> от 45 €/сутки</p>
+                    <p><i>Внедорожник:</i> от 50 €/сутки</p>
                 </div>
             </div>
 
@@ -232,22 +232,22 @@
                     </tr>
                     <tr class="faq__veg-tr text-success">
                       <td>Картофель</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 0,45</td>
                     </tr>
                     <tr class="faq__veg-tr text-success">
                       <td>Помидоры</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 0,80</td>
                     </tr>
                     <tr class="faq__veg-tr text-success">
                       <td>Огурцы</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 0,60</td>
                     </tr>
                     <tr class="faq__veg-tr text-success">
                       <td>Перец</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 2,00</td>
                     </tr>
                    
@@ -256,32 +256,32 @@
                     </tr>
                     <tr class="faq__fruits-tr text-danger">
                       <td>Клубника</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 3,00</td>
                     </tr>
                     <tr class="faq__fruits-tr text-danger">
                       <td>Черешня</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 4,50</td>
                     </tr>
                     <tr class="faq__fruits-tr text-danger">
                       <td>Яблоки</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 0,70</td>
                     </tr>
                     <tr class="faq__fruits-tr text-danger">
                       <td>Бананы</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 1,00</td>
                     </tr>
                     <tr class="faq__fruits-tr text-danger">
                       <td>Виноград</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 3,00</td>
                     </tr>
                     <tr class="faq__fruits-tr text-danger">
                       <td>Апельсины</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 8,00</td>
                     </tr>
                     
@@ -290,46 +290,46 @@
                     </tr>
                     <tr class="faq__meat-tr text-primary">
                       <td>Свинина</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 3,50</td>
                     </tr>
                     <tr class="faq__meat-tr text-primary">
                       <td>Говядина</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 6,50</td>
                     </tr>
                     <tr class="faq__meat-tr text-primary">
                       <td>Курица</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 2,50</td>
                     </tr>
                     <tr class="faq__meat-tr text-primary">
                       <td>Ветчина</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 3,70</td>
                     </tr>
                     <tr class="faq__meat-tr text-primary">
                       <td>Пршут</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 12,00</td>
                     </tr>
 
-                    <tr class="faq__milk-tr text-secondary">
+                    <tr class="faq__milk-tr text-success">
                       <td colspan="3"><b>Молочные продукты</b></td>
                     </tr>
-                    <tr class="faq__milk-tr text-secondary">
+                    <tr class="faq__milk-tr text-success">
                       <td>Сыр</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 5,00</td>
                     </tr>
-                    <tr class="faq__milk-tr text-secondary">
+                    <tr class="faq__milk-tr text-success">
                       <td>Масло</td>
-                      <td nowrap>0,25кг</td>
+                      <td nowrap>0,25 кг</td>
                       <td nowrap>от 2,50</td>
                     </tr>
-                    <tr class="faq__milk-tr text-secondary">
+                    <tr class="faq__milk-tr text-success">
                       <td>Молоко</td>
-                      <td nowrap>1л</td>
+                      <td nowrap>1 л</td>
                       <td nowrap>от 0,70</td>
                     </tr>
 
@@ -338,27 +338,27 @@
                     </tr>
                     <tr class="faq__sea-tr text-info">
                       <td>Мидии</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 2,50</td>
                     </tr>
                     <tr class="faq__sea-tr text-info">
                       <td>Креветки</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 15,00</td>
                     </tr>
                     <tr class="faq__sea-tr text-info">
                       <td>Устрицы</td>
-                      <td nowrap>1шт</td>
+                      <td nowrap>1 шт</td>
                       <td nowrap>от 1,00</td>
                     </tr>
                     <tr class="faq__sea-tr text-info">
                       <td>Дорада/сибас</td>
-                      <td nowrap>1кг</td>
-                      <td nowrap>от 8,/00</td>
+                      <td nowrap>1 кг</td>
+                      <td nowrap>от 8,00</td>
                     </tr>
                     <tr class="faq__sea-tr text-info">
                       <td>Форель</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 5,00</td>
                     </tr>
 
@@ -367,27 +367,27 @@
                     </tr>
                     <tr class="faq__drinks-tr text-danger">
                       <td>Вода без газа</td>
-                      <td nowrap>1,5л</td>
+                      <td nowrap>1,5 л</td>
                       <td nowrap>от 0,50</td>
                     </tr>
                     <tr class="faq__drinks-tr text-danger">
                       <td>Минеральная вода с газом</td>
-                      <td nowrap>1,5л</td>
+                      <td nowrap>1,5 л</td>
                       <td nowrap>от 0,65</td>
                     </tr>
                     <tr class="faq__drinks-tr text-danger">
                       <td>Пиво баночное</td>
-                      <td nowrap>0,5л</td>
+                      <td nowrap>0,5 л</td>
                       <td nowrap>от 0,60</td>
                     </tr>
                     <tr class="faq__drinks-tr text-danger">
                       <td>Вино местное Plantaze</td>
-                      <td nowrap>0,75л</td>
+                      <td nowrap>0,75 л</td>
                       <td nowrap>от 3,00</td>
                     </tr>
                     <tr class="faq__drinks-tr text-danger">
                       <td>Ракия (40 градусов)</td>
-                      <td nowrap>1л</td>
+                      <td nowrap>1 л</td>
                       <td nowrap>от 12,00</td>
                     </tr>
 
@@ -396,32 +396,32 @@
                     </tr>
                     <tr class="faq__another-tr text-success">
                       <td>Хлеб</td>
-                      <td nowrap>1шт</td>
+                      <td nowrap>1 шт</td>
                       <td nowrap>от 0,60</td>
                     </tr>
                     <tr class="faq__another-tr text-success">
                       <td>Макароны</td>
-                      <td nowrap>0,5кг</td>
+                      <td nowrap>0,5 кг</td>
                       <td nowrap>от 0,60</td>
                     </tr>
                     <tr class="faq__another-tr text-success">
                       <td>Яйца</td>
-                      <td nowrap>10шт</td>
+                      <td nowrap>10 шт</td>
                       <td nowrap>от 1,30</td>
                     </tr>
                     <tr class="faq__another-tr text-success">
                       <td>Чай в пакетиках</td>
-                      <td nowrap>20шт</td>
+                      <td nowrap>20 шт</td>
                       <td nowrap>от 0,80</td>
                     </tr>
                     <tr class="faq__another-tr text-success">
                       <td>Кофе молотый</td>
-                      <td nowrap>0,5кг</td>
+                      <td nowrap>0,5 кг</td>
                       <td nowrap>от 4,00</td>
                     </tr>
                     <tr class="faq__another-tr text-success">
                       <td>Сахар</td>
-                      <td nowrap>1кг</td>
+                      <td nowrap>1 кг</td>
                       <td nowrap>от 0,40</td>
                     </tr>
                     <tr class="faq__another-tr text-success">
