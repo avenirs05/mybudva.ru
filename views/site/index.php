@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
 <div id="carousel-main-screen" class="carousel slide" data-ride="carousel">    
-    <h1 class="text-center">Аренда Вилл и Апартаментов на побережье Адриатического моря Черногории</h1>
+    <h1 class="text-center">Аренда Вилл и Апартаментов в Черногории без посредников</h1>
   <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carousel-main-screen" data-slide-to="0" class="active"></li>
@@ -38,7 +38,7 @@
 <div class="container-fluid faq-wrap">
     <div class="row">
         <div class="faq col-xs-12">
-            <h2 class="faq__title text-center">Отдых в Черногории  в 2018 году. Часто задаваемые вопросы.</h2>
+            <h2 class="faq__title text-center">Отдых в Черногории  в 2018 году. <br class="visible-xs-block visible-sm-block"><span style="font-size: 22px;">Часто задаваемые вопросы.</span></h2>
             
             <div class="faq__item">
                 <h3 class="faq__sub-title text-center">КУРОРТЫ И ГОРОДА В ЧЕРНОГОРИИ: КУДА ЛУЧШЕ ПОЕХАТЬ?</h3>

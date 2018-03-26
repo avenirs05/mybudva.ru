@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Аренда вилл и апартаментов в Черногории. Будва, Бечичи, Рафаиловичи, Свети Стефан, Петровац, Булярица. Аренда жилья в Черногории от собственника. Отдых в Черногории 2018 год. Цены.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="format-detection" content="telephone=no">
