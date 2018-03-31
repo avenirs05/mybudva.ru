@@ -35,7 +35,7 @@
             <div class="price-and-btn">
                 <div class="text-right line-through line-through-parent">
                     <?php if ( !(empty($villaItem['price_through'])) ): ?> 
-                        <span id="from">от</span>
+                        <span id="from" style="color: black; text-decoration: none;">от</span>
                         <span class="line-through-child"> 
                             € <?php echo $villaItem['price_through']; ?>                  
                         </span> 

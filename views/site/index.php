@@ -282,7 +282,7 @@
                     <tr class="faq__fruits-tr text-danger">
                       <td>Апельсины</td>
                       <td nowrap>1 кг</td>
-                      <td nowrap>от 8,00</td>
+                      <td nowrap>от 0,80</td>
                     </tr>
                     
                     <tr class="faq__meat-tr text-primary">
