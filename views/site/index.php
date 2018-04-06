@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
 <div id="carousel-main-screen" class="carousel slide" data-ride="carousel">    
-    <h1 class="text-center">Аренда Вилл и Апартаментов в Черногории без посредников</h1>
+    <h1 class="text-center">Аренда вилл и апартаментов в Черногории без посредников</h1>
   <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carousel-main-screen" data-slide-to="0" class="active"></li>
@@ -429,14 +429,11 @@
                       <td nowrap>1 пачка</td>
                       <td nowrap>от 2,00</td>
                     </tr>
-
                   </tbody>
                 </table>
             </div>
-
         </div>
     </div>
-
 </div>
 
 <?php include ROOT . '/views/layouts/footer.php'; ?>
