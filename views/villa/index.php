@@ -1,3 +1,4 @@
+<?php //print_r($_GET); ?>
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
 <div class="container-fluid visible-md-block visible-lg-block">

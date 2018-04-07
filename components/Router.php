@@ -43,6 +43,13 @@ class Router
         // Получаем строку запроса
         $uri = $this->getURI();
 
+        // Удаляем метку Openstat от Яндекса, чтобы директ работал корректно
+        $patternOpenstat = '/\?_openstat/';
+
+        if (preg_match($patternOpenstat, $uri, $matches, PREG_OFFSET_CAPTURE)) {
+            $uri = substr($uri, 0, $matches[0][1]);
+        }
+
         // Проверяем наличие такого запроса в массиве маршрутов (routes.php)
         foreach ($this->routes as $uriPattern => $path) {
 
